@@ -1,0 +1,51 @@
+﻿@using Microsoft.Extensions.Configuration
+@inject IConfiguration Configuration
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+
+    <title>Identity | Collectible Diecast</title>
+
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="~/favicon.png" />
+
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <div class='collectibleDiecast-banner'>
+        <img role="presentation" src="/images/banner.png" />
+    </div>
+    <div class="collectibleDiecast-header">
+        <div class="collectibleDiecast-header-container">
+            <nav class="collectibleDiecast-header-navbar">
+                <a href="@Configuration["WebAppClient"]" class='logo logo-header'>
+                    <img alt="Collectible Diecast" src='/images/logo-header.svg' />
+                </a>
+            </nav>
+      </div>
+    </div>
+
+    <div class="content">
+        @RenderBody()
+    </div>
+
+    <footer class='collectibleDiecast-footer'>
+        <div class='collectibleDiecast-footer-content'>
+            <div class='collectibleDiecast-footer-row'>
+                <img role="presentation" src='/images/logo-footer.svg' class='logo logo-footer' />
+                <p>© Collectible Diecast</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.slim.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    @RenderSection("scripts", required: false)
+</body>
+</html>

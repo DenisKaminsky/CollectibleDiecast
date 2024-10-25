@@ -1,0 +1,842 @@
+[
+  {
+    "Id": 1,
+    "Type": "Fifties Classics",
+    "Brand": "Auto World",
+    "Name": "1953 Cadillac Eldorado Convertible",
+    "Description": "In 1952, Cadillac® was celebrating their 50-year golden anniversary. They needed an exquisite vehicle to epitomize their momentous milestone. The Cadillac® Eldorado™ was the answer. The first generation of the Eldorado™ was produced from 1952 to 1953 only. It was the most expensive vehicle in their lineup. The sweeping lines, golden emblems, and breathtaking chrome detailing was irresistibly luxurious and 100% Cadillac® quality — the gold standard of luxury. Auto World has replicated this rolling work of art in factory matched Gloss Green, wire wheels, and enough chrome for two vehicles! Under the hood is the highly-detailed 331ci V8 with 4-speed hydromantic transmission.",
+    "Price": 69.95
+  },
+  {
+    "Id": 2,
+    "Type": "Fifties Classics",
+    "Brand": "Auto World",
+    "Name": "1949 Mercury Eight Coupe",
+    "Description": "Relive the golden era of automobiles with the 1:18 scale 1949 Mercury Eight Coupe in Berwick Green by Auto World die-cast Model Car. This limited edition die-cast model, measuring 11 inches long, features original ERTL die-cast tooling, with opening hood and doors that reveal an authentically wired and plumbed Flathead V-8 engine. Known for its famous inverted bathtub design, this postwar masterpiece exudes timeless charm. Inside, masterful interior details include full instrumentation and carpeting. The smooth rolling rubber tires and posable front wheels complete the allure of this classic Mercury, making it a must-have for collectors and enthusiasts alike.",
+    "Price": 69.95
+  },
+  {
+    "Id": 3,
+    "Type": "Fifties Classics",
+    "Brand": "American Muscle - Ertl",
+    "Name": "1954 Chevrolet Corvette Convertible",
+    "Description": "Step back in time to the golden age of American sports cars with the 1954 Chevrolet Corvette Convertible. This 1:18 scale diecast model captures the essence of the era with its stunning design and attention to detail. The front-hinged hood opens to reveal a fully detailed Blue Flame Special Straight Six engine, while the doors swing open to showcase the masterful interior detailing. Chrome bumpers, grille, and side spears gleam in the sunlight, and brilliant chrome hubcaps adorn the wheels, which roll smoothly on rubber tires. This limited edition diecast model is a must-have for any automotive enthusiast and a tribute to the timeless beauty of the Chevrolet Corvette.",
+    "Price": 99.99
+  },
+  {
+    "Id": 4,
+    "Type": "Fifties Classics",
+    "Brand": "Motormax",
+    "Name": "1957 Buick Roadmaster Convertible",
+    "Description": "Now this majestic 'master' of the road has been resurrected with all the details you remember. Brilliantly chromed 'man-eater' grille. Gun sight hood ornament. Well appointed 300 hp V-8. Deluxe wraparound windshield. Two-tone paint. And of course Buick's trademark chrome portholes. Order today!",
+    "Price": 36.99
+  },
+  {
+    "Id": 5,
+    "Type": "Fifties Classics",
+    "Brand": "Jada Toys",
+    "Name": "1959 VW Beetle w/Wednesday Addams & Thing Figure",
+    "Description": "Jada Toys introduces a striking 1:24 scale diecast model of the 1959 VW Beetle, paired with Wednesday Addams and Thing figures. This highly detailed replica features an opening hood, doors, and trunk, revealing a detailed rear engine and full interior. The Beetle's gleaming paint and chrome accents, paired with deep dish mag wheels and smooth-rolling rubber tires, make it a standout in any collection. With Wednesday and Thing by its side, this model perfectly captures the eerie charm of the Addams family.",
+    "Price": 28.99
+  },
+  {
+    "Id": 6,
+    "Type": "Fifties Classics",
+    "Brand": "Auto World",
+    "Name": "1959 Cadillac Eldorado Ambulance Surf Shark",
+    "Description": "Get ready for an adventure like no other with the 1959 Cadillac Eldorado Ambulance Surf Shark die-cast model from Auto World. Measuring 1:18 scale and 12 long, this precision die-cast model features a hood and doors that open to reveal a detailed Cadillac V-8 engine under the hood and a full interior. It even includes removable surfboards for added fun. The distressed ambulance paint, sirens, and flashers, along with custom distressed paint and shark graphics, give it a unique and adventurous look. With smooth-rolling rubber tires, this model is perfect for fans of surfing and unique collectibles.",
+    "Price": 69.95
+  },
+  {
+    "Id": 7,
+    "Type": "Fifties Classics",
+    "Brand": "M2 Machines",
+    "Name": "1955 Chevy Bel Air",
+    "Description": "The 1955 Chevy Bel Air in orange by M2 Machines offers a detailed 1:64 scale model with a full diecast metal body and chassis. Part of the Auto-Thentics Release #92, it features authentic paint and graphics, smooth rolling rubber tires, and includes an acrylic display case.",
+    "Price": 9.99
+  },
+  {
+    "Id": 8,
+    "Type": "Fifties Classics",
+    "Brand": "Motormax",
+    "Name": "1958 Chevrolet Impala",
+    "Description": "Get ready to cruise down memory lane with the 1958 Chevrolet Impala 1:18 Scale die-cast Model Car by Motormax. This meticulously crafted collectible captures the essence of the iconic '58 Impala, featuring precision die-cast detailing throughout. The hood, doors, and trunk open to reveal a detailed V-8 engine under the hood, while the interior boasts fine detailing. The gleaming chrome grille, bumpers, and trim add to its authentic charm, and the smooth rolling rubber whitewall tires ensure a realistic display. With steering wheel-controlled front wheels, this 11 1/2 long die-cast model brings the classic Impala to life in your collection.",
+    "Price": 36.99
+  },
+  {
+    "Id": 9,
+    "Type": "Fifties Classics",
+    "Brand": "Motormax",
+    "Name": "1953 Buick Roadmaster Skylark",
+    "Description": "1953 was Buick's 50th Anniversary. To celebrate, Harley Earl designed the most glamorous Buick ever…the 1953 Skylark. This handmade diecast captures all the elegance of Earl's masterpiece from the 'million dollar' grille to the rakish beltline dip. The forty-spoke Kelsey-Hayes wire wheels are beautifully chromed. Under the hood sits Buick's first ever 322 Nailhead V-8 engine. A luxurious interior and removable spare complete this outstanding diecast!",
+    "Price": 36.99
+  },
+  {
+    "Id": 10,
+    "Type": "Fifties Classics",
+    "Brand": "M2 Machines",
+    "Name": "1949 Mercury Hot Rod",
+    "Description": "This 1:64 scale diecast model by M2 Machines features the limited edition 1949 Mercury Hot Rod in pink. The model arrives on a full color blister card and includes full interior details, a diecast metal body and chassis, and authentic paint and graphics. With smooth rolling rubber tires, it's a standout collectible for diecast car fans.",
+    "Price": 7.99
+  },
+  {
+    "Id": 11,
+    "Type": "Fifties Classics",
+    "Brand": "Oxford Diecast",
+    "Name": "1950 Nash Rambler Custom Landau Convertible",
+    "Description": "Oxford Diecast offers a detailed 1:87 scale model of the 1950 Nash Rambler Custom Landau Convertible in a striking blue finish. This diecast model features an intricately cast body with interior details and smooth rolling rubber tires. The classic styling of this vintage convertible is meticulously captured, making it a valuable addition to any diecast collection.",
+    "Price": 13.99
+  },
+  {
+    "Id": 12,
+    "Type": "Fifties Classics",
+    "Brand": "M2 Machines",
+    "Name": "Edelbrock Belly Tanker",
+    "Description": "This 1:64 scale diecast model by M2 Machines features the limited edition Edelbrock Belly Tanker. The model comes on a full color blister card and includes full interior details, a diecast metal body and chassis, and authentic paint and graphics. With smooth rolling rubber tires, it's a premium collectible for diecast car enthusiasts.",
+    "Price": 7.99
+  },
+  {
+    "Id": 13,
+    "Type": "Fifties Classics",
+    "Brand": "Vintage Signs",
+    "Name": "1957 Chevy Nomad Custom",
+    "Description": "Vintage Signs presents the 1957 Chevy Nomad Custom heavy metal sign, crafted from 100% American steel. Made in the USA, this durable sign adds classic style to your garage, man cave, or diecast collection, featuring heavy gauge steel construction for a robust and timeless look.",
+    "Price": 29.99
+  },
+  {
+    "Id": 14,
+    "Type": "Fifties Classics",
+    "Brand": "Oxford Diecast",
+    "Name": "1957 Cadillac Eldorado Brougham",
+    "Description": "Oxford Diecast introduces the 1957 Cadillac Eldorado Brougham in a sophisticated Ebony and Stainless Steel finish, crafted with precision in 1:87 scale. This diecast model features an intricately cast body, detailed interior, and smooth rolling rubber tires. Its iconic classic styling authentically represents the elegance of the original, making it a standout piece for any diecast collection.",
+    "Price": 13.99
+  },
+  {
+    "Id": 15,
+    "Type": "Fifties Classics",
+    "Brand": "Motormax",
+    "Name": "1955 Supercharged Chevy Bel Air",
+    "Description": "This custom die-cast 1955 Bel Air will blow you away with its shimmering burgundy metallic paint and enormous supercharger bursting through the hood. Straight from the car hop, this blast from the past is ready to rumble into your collection. Order today!",
+    "Price": 36.99
+  },
+  {
+    "Id": 16,
+    "Type": "Fifties Classics",
+    "Brand": "Greenlight",
+    "Name": "1949 Mercury Eight Coupe",
+    "Description": "Greenlight introduces a classic cruiser with the 1949 Mercury Eight Coupe in Red Crown livery, featured in the Running on Empty Series 1 in 1:64 scale. This precision diecast model car brings the timeless elegance of the Mercury Eight to life with an accurate-to-scale diecast metal body and chassis. The detailed interior, individual chrome parts, and meticulous detailing showcase the craftsmanship of this collectible. Riding on smooth-rolling rubber tires and adorned with authentic paint and graphics, the Red Crown edition pays homage to the vintage era. With non-steering front wheels, this miniature masterpiece captures the allure of classic cruising, making it a must-have for diecast enthusiasts and collectors who appreciate the charm and nostalgia of historic automobiles.",
+    "Price": 7.49
+  },
+  {
+    "Id": 17,
+    "Type": "Fifties Classics",
+    "Brand": "Brooklin Models",
+    "Name": "1957 Ford Fairlane Skyliner",
+    "Description": "Step back in time with the iconic 1957 Ford Fairlane Skyliner 'Route 66' edition, a limited-edition 1:43 scale collector's item from Brooklin Models. This model is handcrafted one at a time by skilled English artisans, who meticulously cast, paint, polish, assemble, and buff each piece using heavy white metal to capture the vintage charm and intricate details of this classic American car. As a static diecast model with no opening features, it preserves the sleek contours and elegant lines of the original 1957 Skyliner. Offered at special purchase pricing, this model provides both serious collectors and enthusiasts with an opportunity to own a piece of automotive and cultural history at exceptional value.",
+    "Price": 79.99
+  },
+  {
+    "Id": 18,
+    "Type": "Fifties Classics",
+    "Brand": "Esval Models",
+    "Name": "1958 Edsel Villager Amblewagon Ambulance",
+    "Description": "Esval Models proudly presents the Limited Edition 1958 Edsel Villager Amblewagon Ambulance, a unique 1:43 scale cast resin model car. With only 250 units produced, this model car is a rare gem for collectors. It showcases masterful handcrafting and finishing, along with extraordinary interior detailing. The model accurately features the Edsel's signature chrome horse collar grille, complete with authentic ambulance flashers and siren, and is set on classic whitewall tires. This meticulously recreated piece is more than just a model; it's a tribute to the distinctive style and functionality of the 1958 Edsel Villager Amblewagon, making it a must-have for serious collectors and vintage ambulance enthusiasts.",
+    "Price": 99.99
+  },
+  {
+    "Id": 19,
+    "Type": "Fifties Classics",
+    "Brand": "Jada Toys",
+    "Name": "1959 Chevrolet Impala SS Lowrider",
+    "Description": "Dive into the retro allure of American cruising with the Limited Edition 1959 Chevrolet Impala SS Lowrider Diecast Model by Jada Toys 1:24 Scale. Featuring a distinctive two-tone green finish, this meticulously crafted replica showcases a host of custom details, including opening hood, doors, and trunk that reveal a detailed engine and interior. Its low rider stance, custom chrome wire wheels, and brilliant chrome trim reflect the era's automotive style and sophistication. Complete with a continental spare tire kit out back and smooth rolling rubber tires, this model epitomizes vintage lowrider culture with authenticity and precision, making it an ideal centerpiece for any collector's showcase.",
+    "Price": 24.99
+  },
+  {
+    "Id": 20,
+    "Type": "Fifties Classics",
+    "Brand": "Jada Toys",
+    "Name": "Ghostbusters ECTO-1 Optimus Prime Cadillac",
+    "Description": "Uniting two iconic franchises, the Ghostbusters ECTO-1 Optimus Prime Cadillac 1:24 scale diecast model by Jada Toys is a must-have for collectors. This detailed model features opening hood, doors, and rear door, revealing a meticulously crafted engine and interior. Loaded with Ghostbusters roof-mounted accessories and light bars, it also includes a Transformers logo on the doors. Packaged in full-color Ghostbusters and Transformers themed packaging, this model boasts smooth rolling rubber tires for an authentic touch.",
+    "Price": 28.99
+  },
+  {
+    "Id": 21,
+    "Type": "Fifties Classics",
+    "Brand": "Oxford Diecast",
+    "Name": "1954 Buick Century Estate Wagon",
+    "Description": "Oxford Diecast offers the 1954 Buick Century Estate Wagon in a striking Matador Red and Black, precisely crafted in 1:87 scale. This model features an intricately cast diecast body with detailed interior and smooth rolling rubber tires. The classic styling of this vintage estate wagon is faithfully reproduced, making it a standout piece for collectors.",
+    "Price": 13.99
+  },
+  {
+    "Id": 22,
+    "Type": "Fifties Classics",
+    "Brand": "Oxford Diecast",
+    "Name": "Heinkel Kabine LHD Bubble Car",
+    "Description": "Explore the unique charm of postwar German automotive design with the Heinkel Kabine LHD Bubble Car in Troy Grey, now meticulously recreated in 1:18 scale by Oxford Diecast. This precision diecast model captures the essence of the iconic microcar, complete with a front bubble door that opens to reveal its detailed interior. Loaded with individual chrome details, this miniature marvel is a testament to the craftsmanship of the era. The smooth rolling rubber tires ensure authenticity in every detail, making it a fantastic and distinctive addition to your diecast collection. Embrace the elegance and nostalgia of a bygone era with this meticulously crafted Heinkel Kabine model.",
+    "Price": 49.99
+  },
+  {
+    "Id": 23,
+    "Type": "Fifties Classics",
+    "Brand": "Brooklin Models",
+    "Name": "1953 Pontiac Sedan Delivery",
+    "Description": "Introducing the 1953 Pontiac Sedan Delivery 'Florist' Edition, a meticulously crafted limited edition 1:43 scale model from Brooklin Models. Each piece is individually handmade by seasoned English craftsmen, who ensure every detail is perfected from casting to the final buff. This model, cast in heavy white metal, showcases the robust elegance of the classic 1953 Pontiac, tailored for a vintage florist delivery service. It's a static diecast model with no opening features, emphasizing its sleek lines and historical accuracy. Available now at special purchase pricing, this model offers exceptional value, allowing collectors to enhance their collections while benefiting from significant savings.",
+    "Price": 79.99
+  },
+  {
+    "Id": 24,
+    "Type": "Fifties Classics",
+    "Brand": "Esval Models",
+    "Name": "1953 Allard K3 Roadster",
+    "Description": "Step into the era of classic motoring with the limited edition 1953 Allard K3 roadster model by Esval Models. This finely crafted 1:43 scale replica captures the essence of the iconic roadster, limited to just 250 units worldwide. Meticulously hand-finished, it features incredible interior detailing and boasts dozens of individual chrome parts. Packaged in a custom display case, this model comes equipped with rolling rubber tires, inviting you to admire the timeless allure of the Allard K3 in exquisite detail.",
+    "Price": 99.99
+  },
+  {
+    "Id": 25,
+    "Type": "Fifties Classics",
+    "Brand": "Minichamps",
+    "Name": "1954 Mercedes-Benz 300 SL",
+    "Description": "Behold the timeless elegance of the 1954 Mercedes-Benz 300 SL Gullwing in Silver, meticulously recreated in a limited edition 1:18 scale diecast model by Minichamps. This automotive masterpiece invites you to experience the allure of its design, with front-hinged hood and trunk that open to reveal intricate detailing of the plumbed and wired engine beneath. The iconic gullwing doors swing open, inviting admiration for the flawless craftsmanship that defines this classic beauty. Immerse yourself in the masterful interior details that capture the essence of luxury. Complete with a rubber spare tire in the trunk and loaded with brilliantly chromed parts and details, this model is a testament to Minichamps' commitment to precision. Steerable front wheels and rolling rubber tires provide the finishing touch, making this limited edition 300 SL Gullwing a true collector's gem.",
+    "Price": 199.93
+  },
+  {
+    "Id": 26,
+    "Type": "Fifties Classics",
+    "Brand": "Bburago",
+    "Name": "1951 Jaguar XK 120 Roadster",
+    "Description": "Step into the world of classic elegance with the 1951 Jaguar XK 120 Roadster, now available as a precision 1:24 scale, 7 1/2 long die-cast model by Bburago. This dark green gem replicates the world's fastest production car of its era, featuring sumptuous curves, a finely detailed interior, and a wired 3.4L straight-six engine. The seamless combination of historic charm and meticulous craftsmanship makes this model a joy to behold and a prized addition to any collection.",
+    "Price": 17.99
+  },
+  {
+    "Id": 27,
+    "Type": "Fifties Classics",
+    "Brand": "Bburago",
+    "Name": "1955 Volkswagen Käfer-Beetle",
+    "Description": "Experience the timeless charm of the 1955 Volkswagen Käfer Beetle in this 1:18 scale diecast model car in a classic gray finish. Precision diecast collectible features openable hood, doors, and trunk, revealing a detailed rear-mounted air-cooled flat-four engine and full interior detailing. The chrome bumpers, hood handle, headlight bezels, and running board trim add to its authenticity, while the dog dish hubcaps with VW logos and steering wheel-controlled front wheels complete the package.",
+    "Price": 39.99
+  },
+  {
+    "Id": 28,
+    "Type": "Fifties Classics",
+    "Brand": "Maisto",
+    "Name": "1955 Mercedes-Benz 190SL",
+    "Description": "Embark on a journey through automotive history with the 1955 Mercedes-Benz 190SL by Maisto. This 1:18 scale die-cast model features precision detailing, capturing the elegance of the original. A timeless classic, this meticulously crafted model showcases the iconic design and craftsmanship that made the 190SL a symbol of sophistication.",
+    "Price": 36.99
+  },
+  {
+    "Id": 29,
+    "Type": "Fifties Classics",
+    "Brand": "Motormax",
+    "Name": "1956 Ford Thunderbird Coupe",
+    "Description": "Ford created a sales sensation when the introduced their Thunderbird 'personal luxury car'! By 1956 the T-Bird was outselling Corvettes 23 to 1. Sporting an all new 312 cid Thunderbird V-8, standard convertible top, Ferrari inspired grille and continental spare - 1956 was Ford's most beautiful T-Bird ever! Add the fabulous 1956 Thunderbird to your die-cast collection.",
+    "Price": 39.99
+  },
+  {
+    "Id": 30,
+    "Type": "Fifties Classics",
+    "Brand": "Motormax",
+    "Name": "1949 Ford Coupe",
+    "Description": "The revolutionary 1949 Ford was completely redesigned from the ground up as Ford's first new postwar automobile. This well-appointed diecast will delight you from its famous chrome 'bullet' spinner grille to the detailed L-Head V-8 under the hood.",
+    "Price": 16.99
+  },
+
+
+  
+  {
+    "Id": 31,
+    "Type": "Modern Classics",
+    "Brand": "Kyosho",
+    "Name": "Ferrari F40",
+    "Description": "Unleash the spirit of racing royalty with Kyosho's limited edition Ferrari F40 in Black, a 1:18 scale diecast model that embodies the essence of automotive excellence. The rear engine cover tilts up, the doors swing open, and the headlights pop up to reveal a meticulously detailed mid-mounted twin-turbo V-8 engine, capturing the heart of this iconic Italian masterpiece. Inside, the carbon fiber-look interior detailing and race-bred seats showcase Kyosho's masterful craftsmanship. Adorned with authentic NACA ducts and a high rear wing, this model is a tribute to the aerodynamic prowess of the original Ferrari F40. The smooth-rolling rubber tires, complete with an authentic tread pattern, ensure that every inch of this diecast beauty reflects the racing heritage and precision engineering for which Ferrari is renowned.",
+    "Price": 364.99
+  },
+  {
+    "Id": 32,
+    "Type": "Modern Classics",
+    "Brand": "Greenlight",
+    "Name": "1988 Pontiac Firebird Trans Am GTA",
+    "Description": "Immerse yourself in the glory days of muscle cars with the meticulously crafted 1988 Pontiac Firebird Trans Am GTA diecast model in Flame Red by Greenlight. This 1:18 scale replica boasts precision detailing, with features like opening hood, doors, and liftback, revealing a fully-detailed engine beneath the vented hood. The masterful interior details transport you back in time, complemented by the iconic gold tone and chrome BBS style wheels, front air dam, and wraparound rear wing. Experience the thrill of the era with smooth-rolling rubber performance tires that enhance the authenticity of this classic piece. Embrace the nostalgia and own a piece of automotive history with this remarkable diecast model.",
+    "Price": 74.99
+  },
+  {
+    "Id": 33,
+    "Type": "Modern Classics",
+    "Brand": "Motormax",
+    "Name": "Saleen S7",
+    "Description": "Illuminate your collection with the vibrant Saleen S7 diecast model by Motormax, meticulously crafted in 1:18 scale and finished in a striking yellow. This model features butterfly doors along with opening hood and trunk, revealing a highly detailed interior that showcases the car's performance heritage. With a front splitter, rear wing, front air scoops, and rear extractor vents, the aerodynamic design is captured with precision. The quad chrome exhaust adds a touch of elegance, while smooth rolling rubber tires and steerable front wheels ensure a lifelike experience. This model is a must-have for enthusiasts who appreciate bold design and meticulous detail.",
+    "Price": 36.99
+  },
+  {
+    "Id": 34,
+    "Type": "Modern Classics",
+    "Brand": "Motormax",
+    "Name": "Porsche 911 Turbo Cabriolet",
+    "Description": "Experience the thrill of the Porsche 911 Turbo Cabriolet with this precision diecast model by Motormax, presented in a vibrant yellow at 1:18 scale. Featuring opening doors and rear engine cover, this model reveals a detailed turbocharged boxer engine and authentic interior detailing. The design includes an accurate turbo rear wing and steerable alloy wheels with smooth rolling rubber tires. A must-have for enthusiasts, this model perfectly captures the iconic style and performance of the legendary Porsche 911 Turbo Cabriolet.",
+    "Price": 36.99
+  },
+  {
+    "Id": 35,
+    "Type": "Modern Classics",
+    "Brand": "Motormax",
+    "Name": "Chrysler ME 4-12 Concept",
+    "Description": "Embrace cutting-edge design with the Chrysler ME 4-12 Concept diecast model by Motormax, showcased in an elegant black finish at 1:18 scale. This precision model features opening hood, doors, and rear engine cover, revealing a detailed 12-cylinder engine with a chrome intake plenum. The full showcars interior detailing, visible twin fans, suspension in the front trunk, and quad chrome rear exhaust add to its futuristic appeal. Alloy wheels with smooth rolling rubber tires complete this exceptional collectible, perfect for enthusiasts who appreciate innovative design and meticulous detail.",
+    "Price": 29.99
+  },
+  {
+    "Id": 36,
+    "Type": "Modern Classics",
+    "Brand": "AutoArt",
+    "Name": "Lamborghini Diablo SE30",
+    "Description": "",
+    "Price": 249.99
+  },
+  {
+    "Id": 37,
+    "Type": "Modern Classics",
+    "Brand": "Solido",
+    "Name": "1984 BMW 635 CCI (E24)",
+    "Description": "Solido presents a meticulously crafted 1:18 scale diecast model, paying homage to the racing legacy of the 1984 BMW 635 CCI (E24) #6 driven by the legendary H. Stuck in the European Touring Car Championship. The vibrant orange exterior, adorned with authentic racing graphics, captures the essence of this iconic top-of-the-line BMW coupe. The precision of Solido's craftsmanship is evident as the doors swing open to reveal a meticulously detailed interior, while the memorable front canted grille, front air dam, and rear spoiler reflect the car's racing pedigree. Mounted on smooth-rolling rubber tires, this model stands as a testament to the thrilling history of European touring car racing, making it a must-have for collectors and enthusiasts alike. Own a piece of motorsport history with this captivating 1984 BMW 635 CCI diecast model car that encapsulates the spirit of speed and competition.",
+    "Price": 62.99
+  },
+  {
+    "Id": 38,
+    "Type": "Modern Classics",
+    "Brand": "Solido",
+    "Name": "1990 Porsche 911 (964) Turbo",
+    "Description": "Immerse yourself in the luxurious world of the 1990 Porsche 911 (964) Turbo with Solido's 1:18 scale diecast model, expertly crafted in a captivating blue finish. Precision is paramount in this replica, as its doors open to reveal a meticulously detailed interior, and the posable front wheels add an authentic touch to its design. The model showcases the iconic Porsche with authentic paint and graphics, accompanied by smooth-rolling rubber tires and an accurately reproduced wheel design. As an officially licensed diecast collectible, Solido maintains its commitment to delivering excellence, offering enthusiasts and collectors alike an opportunity to own a piece of automotive history with this elegantly designed and meticulously crafted Porsche 911 Turbo model.",
+    "Price": 49.99
+  },
+  {
+    "Id": 39,
+    "Type": "Modern Classics",
+    "Brand": "Norev",
+    "Name": "2003 Mercedes-Benz SL 500",
+    "Description": "Dive into luxury and precision with Norev's 1:18 scale diecast model of the 2003 Mercedes-Benz SL 500 in sleek Black. This meticulously crafted replica features a host of realistic details, including opening hood, doors, and trunk that reveal a plumbed and wired engine under the hood, and a masterfully detailed interior. With a removable top and rear windscreen for added versatility, this model captures the essence of the iconic SL 500. Complete with smooth rolling rubber tires, it exemplifies Norev's dedication to authenticity and craftsmanship, making it an essential addition for collectors and enthusiasts alike.",
+    "Price": 124.99
+  },
+  {
+    "Id": 40,
+    "Type": "Modern Classics",
+    "Brand": "Motormax",
+    "Name": "2001 Mini Cooper (R50)",
+    "Description": "Relive the charm of the 2001 Mini Cooper (R50) with this precision diecast model by Motormax, scaled at 1:18 and finished in a delightful blue. Featuring opening hood, doors, and rear liftgate, this model showcases a detailed engine and full interior detailing. The classic Mini 'bulldog' stance is complemented by a contrasting white roof and mirrors, alloy wheels, and smooth rolling rubber tires. Perfect for collectors who appreciate the timeless appeal and detailed craftsmanship of this iconic compact car.",
+    "Price": 29.99
+  },
+  {
+    "Id": 41,
+    "Type": "Modern Classics",
+    "Brand": "Motormax",
+    "Name": "1970 Chevy El Camino",
+    "Description": "Own the most powerful El Camino Chevy ever produced. The 1970 El Camino SS 396 was nicknamed the 'Hell Camino' because she was faster than a bat out of hell! Now this 375 hp monster is replicated in fantastic detail. Complete with authentic cowl-induction hood, rally wheels and authentic SS 396 graphics!",
+    "Price": 17.99
+  },
+  {
+    "Id": 42,
+    "Type": "Modern Classics",
+    "Brand": "Auto World",
+    "Name": "2005 Aston Martin V-12 Vanquish",
+    "Description": "Indulge in the epitome of luxury and performance with the 2005 Aston Martin V-12 Vanquish S. This 1:18 scale diecast model by Auto World is a testament to British automotive excellence. With openable hood and doors, it unveils a fully detailed, plumbed, and wired V-12 engine under the hood. The interior is loaded with authentic details, showcasing the sleek lines and low-slung bodywork that define this iconic car. Its low-profile rubber performance tires complete the look, making it a must-have for enthusiasts of high-end sports cars.",
+    "Price": 99.99
+  },
+  {
+    "Id": 43,
+    "Type": "Modern Classics",
+    "Brand": "Motormax",
+    "Name": "1970 Boss 429 Mustang",
+    "Description": "In order to shoehorn the massive 429 V-8 into the Mustang's engine bay, Ford hired Kar Kraft to engineer the modifications, creating the baddest Boss ever with an unbelievable 600+ hp! The 1970 Boss 429 is the rarest, most collectible Mustang ever…only 499 were built. How do you tell a '70 429 from a '69? All 1970 Boss 429s have matte black hood scoops…'69 scoops were body colored. And this is the only diecast 429 that has the actual metal cutout in the hood that makes the scoop functional! This historically authentic beauty is a must have for every diecast collector. So hurry….order today!",
+    "Price": 36.99
+  },
+  {
+    "Id": 44,
+    "Type": "Modern Classics",
+    "Brand": "Solido",
+    "Name": "1997 Subaru Impreza 22B",
+    "Description": "Dive into the exhilarating world of rallying with Solido's 1:18 scale diecast model of the 1997 Subaru Impreza 22B #4, as driven in the Rallye Monte Carlo. This officially licensed replica features functional doors that open to reveal a meticulously detailed interior, showcasing the racing-inspired appointments of the iconic Impreza. With posable front wheels for dynamic display options, the model boasts a highly accurate diecast body, capturing every curve and detail of Subaru's championship-winning rally car. Smooth rolling rubber tires ensure realistic movement, making it a must-have for collectors and fans of motorsport history, celebrating Subaru's dominance in the demanding Rallye Monte Carlo.",
+    "Price": 64.99
+  },
+  {
+    "Id": 45,
+    "Type": "Modern Classics",
+    "Brand": "Motormax",
+    "Name": "Lamborghini Gallardo Super",
+    "Description": "Revel in the vibrant power of the Lamborghini Gallardo Super with this precision diecast model by Motormax, finished in striking orange at 1:18 scale. Featuring opening doors and rear engine cover, this model unveils a detailed V-10 engine with Lamborghini script on the valve covers and authentic interior detailing. The aggressive styling includes a high mount rear wing and steerable alloy wheels with smooth rolling rubber tires. Perfect for collectors, this model encapsulates Lamborghini's dynamic design and engineering excellence.",
+    "Price": 29.99
+  },
+  {
+    "Id": 46,
+    "Type": "Modern Classics",
+    "Brand": "Motormax",
+    "Name": "2003 Dodge Viper SRT-10",
+    "Description": "Unleash the beast with the 2003 Dodge Viper SRT-10 diecast model by Motormax, expertly crafted in 1:18 scale and finished in a striking red. This precision model features opening hood, doors, and trunk, revealing a detailed SRT V-10 engine and a fully detailed interior. The aggressive styling captures the Viper's iconic design, while steerable front wheels and smooth rolling rubber performance tires ensure a realistic and dynamic display. Perfect for collectors who appreciate the blend of raw power and meticulous detail in their diecast models.",
+    "Price": 29.99
+  },
+  {
+    "Id": 47,
+    "Type": "Modern Classics",
+    "Brand": "Solido",
+    "Name": "1993 Toyota Supra Mk4",
+    "Description": "Embrace the thrill of the 90s street racing era with Solido's meticulously crafted 1:18 scale diecast model of the 1993 Toyota Supra Mk4 (A80) Streetfighter. Dressed in an eye-catching orange, this model car is a vivid tribute to one of the most iconic sports cars of its time. The attention to detail is evident from the matte carbon look hood to the aggressive front chin spoiler and the imposing high mount rear wing. Every aspect, including the full interior detailing and the striking two-tone mag wheels, is designed to reflect the Supra's legendary status. The smooth rolling rubber tires add a touch of realism, ensuring that this model is not just a display piece, but a representation of the Supra's enduring legacy in car culture. Perfect for enthusiasts and collectors alike, this 1993 Toyota Supra Mk4 model is a bold statement of speed and style.",
+    "Price": 52.99
+  },
+  {
+    "Id": 48,
+    "Type": "Modern Classics",
+    "Brand": "Jada Toys",
+    "Name": "Knight Rider KITT",
+    "Description": "Loaded with artificial intelligence KITT is a 1982 Pontiac Firebird created by Knight Industries to solve crimes and foil evil plots. This precision KITT diecast arrives ready to display with a fully functional front infra-red scanner that lights up when the doors are opened. The interior includes KITT's triple yoke steering wheel and four panel display screen dashboard. There's even a hydrogen powered turbo-boost engine under the hood!",
+    "Price": 29.99
+  },
+  {
+    "Id": 49,
+    "Type": "Modern Classics",
+    "Brand": "Jada Toys",
+    "Name": "2006 Porsche 911 GT3 RS",
+    "Description": "The 2006 Porsche 911 GT3 RS (996.1) comes to life in this 1:24 scale diecast model by Jada Toys. Featuring precise detailing with openable hood, doors, and trunk, it includes a detailed engine under the rear deck lid and full interior. The model also boasts striking GT3 RS graphics, a front air dam, a high mount rear wing, deep dish chrome wheels, and smooth rolling rubber tires.",
+    "Price": 22.99
+  },
+  {
+    "Id": 50,
+    "Type": "Modern Classics",
+    "Brand": "KK Scale Models",
+    "Name": "1974 Dodge Monaco",
+    "Description": "Capture the essence of law enforcement history with the limited edition 1974 Dodge Monaco, meticulously crafted to represent the New York State Police, in a stunning 1:18 scale by KK Scale Models. This cast resin model car boasts an exquisite level of detail, from the chrome grille, bumpers, and hubcaps to the iconic roof-mounted siren and flashers. Featuring authentic New York State Police paint and graphics, full interior detailing, and an A-pillar mounted search light, this model embodies the robust presence of a classic American police vehicle. Smooth rolling rubber tires complete the realistic look, making this a must-have collectible for both model car enthusiasts and memorabilia collectors.",
+    "Price": 119.99
+  },
+  {
+    "Id": 51,
+    "Type": "Modern Classics",
+    "Brand": "Motormax",
+    "Name": "1979 Chrysler LeBaron",
+    "Description": "1979 Chrysler LeBaron Town & Country Diecast Model Car - Light Cashmere 1:24 Scale",
+    "Price": 17.99
+  },
+  {
+    "Id": 52,
+    "Type": "Modern Classics",
+    "Brand": "Jada Toys",
+    "Name": "2002 Nissan Skyline GT-R (R34)",
+    "Description": "Jada Toys brings the iconic 2002 Nissan Skyline GT-R (R34) 'Godzilla' to life in 1:24 scale with remarkable precision. Featuring opening hood, doors, and trunk, this diecast model showcases a detailed engine, full interior, and aggressive ground effects, including a deep front air dam, side sills, and rear diffuser. With a high-mount rear wing, cool Godzilla graphics, and smooth-rolling deep dish mag wheels, this model is a must-have for car enthusiasts and collectors alike.",
+    "Price": 24.99
+  },
+  {
+    "Id": 53,
+    "Type": "Modern Classics",
+    "Brand": "Welly",
+    "Name": "Volvo 240 GL",
+    "Description": "Experience the timeless charm of the Volvo 240 GL with this precision-crafted 1:24 scale model by Welly. The meticulously detailed replica features opening doors and hood, revealing a finely crafted engine and interior. With steerable front wheels, aero alloy wheels adorned with the Volvo logo, and front bucket seats with see-through headrests, this model captures the essence of the iconic Volvo design. Complete with smooth rolling rubber tires, it's a must-have for collectors and enthusiasts alike.",
+    "Price": 18.99
+  },
+  {
+    "Id": 54,
+    "Type": "Modern Classics",
+    "Brand": "Jada Toys",
+    "Name": "1987 Buick Grand National #7",
+    "Description": "Experience the thrill of racing history with the 1987 Buick Grand National #7 1:24 Scale Diecast Model Car by Jada Toys. This precision model features an intricately detailed engine, fully accessible through the opening hood, doors, and trunk. The eye-popping Buick racing graphics and meticulously crafted interior bring this classic car to life. Smooth rolling rubber tires ensure it looks ready to hit the track, making it a must-have for any diecast collector or racing enthusiast.",
+    "Price": 20.99
+  },
+  {
+    "Id": 55,
+    "Type": "Modern Classics",
+    "Brand": "Solido",
+    "Name": "BMW M5",
+    "Description": "Solido presents the BMW M5 - Blue, a 1:43 scale diecast model car that combines elegance and precision, ideal for collectors and enthusiasts alike. This model, showcasing the distinct lines and features of the BMW M5, comes encased in an acrylic display case with a base, perfect for showing off its refined details. The full interior detailing and precision diecast body casting authentically capture the M5's sophisticated design and engineering excellence. Highlighted by a buffed high gloss blue paint finish, this model exudes luxury and style. Although it doesn't feature opening parts, the smooth rolling rubber tires add a realistic touch to this miniature masterpiece. Whether for display or admiration, this BMW M5 model is a must-have for those who appreciate the finer things in automotive artistry.",
+    "Price": 19.98
+  },
+  {
+    "Id": 56,
+    "Type": "Modern Classics",
+    "Brand": "Motormax",
+    "Name": "VW Nardo W12",
+    "Description": "Discover the allure of the VW Nardo W12 with this meticulously crafted diecast model by Motormax, showcased in a striking metallic orange at 1:18 scale. This precision model features opening scissor doors and rear engine cover, unveiling a detailed mid-engine W-12 and full interior detailing. The integrated rear wing and steerable front wheels add to its dynamic presence, while smooth rolling rubber performance tires ensure a lifelike touch. Perfect for collectors who appreciate cutting-edge design and high-performance detail in their diecast models.",
+    "Price": 29.99
+  },
+  {
+    "Id": 57,
+    "Type": "Modern Classics",
+    "Brand": "Solido",
+    "Name": "Mercedes-Benz 560 SEC Wide Body",
+    "Description": "Introducing the Mercedes-Benz 560 SEC Wide Body, a masterfully crafted 1:43 scale model by Solido that reflects the opulence and powerful stance of the classic luxury coupe. This exquisite model is finished in a striking silver, featuring a precision cast metal body with authentic paint and detailed graphics that highlight its muscular contours. The car's interior is meticulously replicated to showcase the refined details characteristic of Mercedes-Benz. Presented in a custom display showcase, this sealed diecast replica rolls smoothly on rubber tires, making it an essential addition for collectors and enthusiasts who appreciate the blend of performance and luxury in their scale models.",
+    "Price": 14.98
+  },
+  {
+    "Id": 58,
+    "Type": "Modern Classics",
+    "Brand": "GT Spirit",
+    "Name": "Mercedes-Benz CLK-GTR Super Sport",
+    "Description": "GT Spirit proudly unveils the Mercedes-Benz CLK-GTR Super Sport in a striking red, a cast resin model car in a precise 1:18 scale. This meticulously crafted masterpiece showcases the pinnacle of masterful interior detailing, reflecting the luxurious essence of the Mercedes-Benz brand. The model car features a deep front air dam and a high mount rear wing, capturing the aerodynamic prowess of the original supercar. A roof-mounted air intake snorkel adds to its aggressive profile, while the authentic turbine wheels and fender mounted rearview mirrors enhance its realistic appearance. The rolling rubber tires on this sealed cast resin body offer a glimpse into the seamless blend of performance and elegance that the CLK-GTR Super Sport embodies. For collectors and enthusiasts, this model is not just a representation, but a celebration of the engineering marvel that is the Mercedes-Benz CLK-GTR Super Sport.",
+    "Price": 139.99
+  },
+  {
+    "Id": 59,
+    "Type": "Modern Classics",
+    "Brand": "KK Scale Models",
+    "Name": "1995 Ferrari F50",
+    "Description": "Relive the exhilaration of the 1995 Ferrari F50 with this 1:18 scale open-top model by KK Scale Models. Expertly crafted in cast resin, this red beauty features working steering and functional suspension. While it lacks opening features, the precision casting and smooth rolling rubber tires perfectly capture the essence of Ferrari's mid-90s supercar. An essential piece for any Ferrari aficionado.",
+    "Price": 124.99
+  },
+  {
+    "Id": 60,
+    "Type": "Modern Classics",
+    "Brand": "KK Scale Models",
+    "Name": "1981 Lotus Esprit Turbo",
+    "Description": "The 1981 Lotus Esprit Turbo in striking red, presented by KK Scale Models in 1:18 scale, offers a nostalgic nod to the iconic Miami Vice era. Crafted with precision cast resin, this model features working steering, functional suspension, and smooth rolling rubber tires. Although it lacks opening features, the exquisite body casting captures the sleek design of this classic sports car, making it a standout addition to any collection.",
+    "Price": 124.99
+  },
+  {
+    "Id": 61,
+    "Type": "Modern Classics",
+    "Brand": "Solido",
+    "Name": "1991 Honda Civic (EG6)",
+    "Description": "Rediscover the compact car that captured the hearts of millions with Solido's meticulously detailed 1:18 scale diecast model of the 1991 Honda Civic (EG6), presented in a sleek white finish. This model mirrors the clean lines and reliable performance that made the Civic a favorite worldwide. It features doors that open to reveal a fully detailed interior, emphasizing the practical yet stylish design that Honda enthusiasts love. Mounted on silver 5-spoke star wheels and equipped with smooth rolling rubber tires, this Civic is not just a model but a piece of automotive history. Perfect for collectors and Honda fans, it embodies the spirit and innovation of the early '90s compact car scene.",
+    "Price": 54.99
+  },
+  {
+    "Id": 62,
+    "Type": "Modern Classics",
+    "Brand": "Solido",
+    "Name": "1994 Mazda RX7 FD RS",
+    "Description": "Solido presents a masterfully crafted 1:18 scale diecast model capturing the essence of speed with the 1994 Mazda RX7 FD RS in a vibrant blue hue. The precision-engineered replica features meticulously designed details, including doors that swing open to reveal a full interior with intricate elements. The front of the car boasts driving lights and an aerodynamic splitter, while the high mount rear wing enhances its racing appeal. The model rests on five-spoke star alloy wheels, authentically replicating the original design, and glides smoothly on rubber tires. This collectible showcases Solido's commitment to accuracy, making it a must-have for enthusiasts and collectors alike, allowing them to own a piece of automotive history with the iconic 1994 Mazda RX7 FD RS.",
+    "Price": 52.99
+  },
+  {
+    "Id": 63,
+    "Type": "Modern Classics",
+    "Brand": "Solido",
+    "Name": "1984 BMW 635 CSI (E24)",
+    "Description": "Solido's 1:18 scale diecast model of the iconic 1984 BMW 635 CSI (E24) in a stunning red captures the essence of luxury and performance. This meticulously crafted model showcases the E24's distinctive features, from the memorable front canted grille to the sleek lines that defined an era of BMW design. The doors swing open to reveal an interior rich in detail, echoing the sophistication of the top-of-the-line coupe. With a well-executed front air dam and rear spoiler, the car's dynamic silhouette is unmistakable. It rests on polished alloy wheels, and the smooth-rolling rubber tires add a realistic touch. This model is a must-have for enthusiasts and collectors, paying homage to the timeless elegance and engineering prowess of BMW in the 1980s. Whether on display or in the hands of a collector, this 1984 BMW 635 CSI diecast model car is a striking reminder of the enduring allure of classic automotive design.",
+    "Price": 52.99
+  },
+
+
+
+  {
+    "Id": 64,
+    "Type": "Modern Supercars",
+    "Brand": "AutoArt",
+    "Name": "Pagani Huayra Roadster",
+    "Description": "Discover the elegance of the Pagani Huayra Roadster with this 1:18 scale diecast and composite model by AutoArt. The model features a front-hinged hood, opening doors, rear clamshell engine cover, removable top, and custom luggage. With a front splitter, rear diffuser, and posable front wheels, it boasts masterful engine and interior details. This meticulously crafted model is a stunning addition for any collector.",
+    "Price": 329.99
+  },
+  {
+    "Id": 65,
+    "Type": "Modern Supercars",
+    "Brand": "AutoArt",
+    "Name": "Koenigsegg Regera",
+    "Description": "Step into the realm of automotive excellence with the Koenigsegg Regera in White with Carbon Accents, meticulously replicated in this 1:18 scale composite diecast model car by AutoArt. Featuring dihedral synchro-helix doors that open to reveal its futuristic interior with an authentic three-seat layout, this model also boasts a hood and rear clamshell engine cover that open to showcase a fully plumbed and wired mid-mounted turbo V-8 engine. A removable Targa top adds to its versatility and realism, while steerable front wheels and smooth rolling rubber performance tires ensure dynamic display options. Embodying Koenigsegg's commitment to innovation and performance, this model is a must-have for collectors and enthusiasts alike.",
+    "Price": 299.99
+  },
+  {
+    "Id": 66,
+    "Type": "Modern Supercars",
+    "Brand": "AutoArt",
+    "Name": "McLaren Senna",
+    "Description": "AutoArt introduces the pinnacle of supercar design with the McLaren Senna in striking Trophy Kyanos blue, a breathtaking 1:18 scale composite model car that encapsulates the essence of speed and innovation. This meticulously crafted model showcases butterfly doors that swing open and a pivoting rear wing airbrake, designed to mimic the Senna's dynamic aerodynamics. The car features a carbon fiber look on both the front splitter and rear diffuser, enhancing its aggressive styling. Inside, the masterful detailing is evident throughout the cabin, complemented by nine spoke center hub wheels and realistic carbon ceramic brakes. Complete with smooth rolling high-performance rubber tires and steerable front wheels, this model delivers an unparalleled representation of McLaren's dedication to automotive excellence.",
+    "Price": 259.99
+  },
+  {
+    "Id": 67,
+    "Type": "Modern Supercars",
+    "Brand": "AutoArt",
+    "Name": "McLaren Speedtail",
+    "Description": "Experience the McLaren Speedtail in Volcano Red with this precision-crafted 1:18 scale composite diecast model car by AutoArt. This exquisite replica features butterfly doors that open gracefully, allowing access to a meticulously detailed interior with an authentic three-seat layout. Front and rear trunks also open to reveal additional detailing, and the model includes custom luggage for added realism. The McLaren Speedtail's aerodynamically smooth shape is faithfully recreated, complemented by steerable front wheels and smooth rolling rubber performance tires that enhance its display and handling capabilities. Ideal for collectors and enthusiasts alike, this model embodies the innovation and luxury of McLaren's iconic Hypercar.",
+    "Price": 259.99
+  },
+  {
+    "Id": 68,
+    "Type": "Modern Supercars",
+    "Brand": "AutoArt",
+    "Name": "2022 Dodge Challenger R/T",
+    "Description": "AutoArt presents the pinnacle of muscle car design with the 2022 Dodge Challenger R/T Scat Pack Widebody in stunning Indigo Blue. This 1:18 scale composite diecast model captures every detail of the real Challenger, featuring a functional shaker hood, doors, and trunk that open to reveal a masterfully detailed 392 CID HEMI V-8 engine with a shaker scoop and high-flow cold air filter. The interior mirrors the actual car's design with exceptional accuracy, and even the trunk opens on authentic hinges to show detailed interior lining. The model's gorgeous mirror-smooth Indigo Blue paint complements its aggressive styling, which includes a front splitter, rear spoiler, high-performance rotors and calipers. Equipped with smooth-rolling soft rubber performance tires and steerable front wheels, this model offers a true-to-life representation of modern American muscle, making it a must-have for enthusiasts and collectors.",
+    "Price": 219.99
+  },
+  {
+    "Id": 69,
+    "Type": "Modern Supercars",
+    "Brand": "AutoArt",
+    "Name": "Chevrolet C8 Corvette Stingray Z51",
+    "Description": "Experience the thrill of the Chevrolet C8 Corvette Stingray Z51 in stunning Sebring Orange with this 1:18 scale diecast composite model by Auto Art. This limited edition model features opening hood, doors, and trunk, along with a removable roof panel for a convertible look. Marvel at the masterful engine detailing and intricate interior that brings this car to life. Equipped with a front splitter, side sills, rear diffuser, and rear wing, this model also boasts intricate 5 spoke wheels, massive calipers and rotors, and smooth rolling high performance tires.",
+    "Price": 209.99
+  },
+  {
+    "Id": 70,
+    "Type": "Modern Supercars",
+    "Brand": "Top Speed",
+    "Name": "Bugatti Chiron Super Sport",
+    "Description": "Experience the thrill of speed and precision with the Limited Edition Bugatti Chiron Super Sport 300+ World Record 304.773 mph 1:18 Scale Cast Resin Model Car by Top Speed. This exquisite replica faithfully recreates the historic Bugatti that shattered the world speed record, becoming the first production car to surpass 300 MPH. Every detail, from the exact world speed record exterior trim to the authentic paint and graphics, captures the essence of this groundbreaking achievement. Rolling rubber race tires and a sealed cast resin body ensure a realistic portrayal of the aerodynamic masterpiece. Own a piece of automotive history with this collector's model, showcasing the epitome of speed and engineering prowess.",
+    "Price": 169.98
+  },
+  {
+    "Id": 71,
+    "Type": "Modern Supercars",
+    "Brand": "Top Speed",
+    "Name": "Bugatti Centodieci",
+    "Description": "Park this amazing 1,578 HP hypercar in your die-cast collection. The Bugatti Centodieci is a limited-edition cast resin collectible that commemorates 110 years of Bugatti automobiles. With its full ground effects package, high mount rear wing, and uniquely cast alloy wheels wrapped in low-profile rubber tires, this hypercar masterpiece is a must-have for collectors who appreciate the pinnacle of automotive engineering.",
+    "Price": 159.98
+  },
+  {
+    "Id": 72,
+    "Type": "Modern Supercars",
+    "Brand": "GT Spirit",
+    "Name": "2021 McLaren 765LT Spider",
+    "Description": "Prepare to be blown away by the 2021 McLaren 765LT Spider, a limited-edition cast resin collectible that embodies the pinnacle of supercar performance. This model recreates one of only 765 ever built, featuring a fully detailed interior, flying buttress roll hoops, beautiful open-spoke wheels, painted calipers, and cross-drilled rotors. With smooth-rolling rubber tires and a sealed cast resin body, it's a true work of automotive art. Experience the thrill of McLaren's engineering excellence and the open-top driving experience with this stunning miniature masterpiece.",
+    "Price": 139.99
+  },
+  {
+    "Id": 73,
+    "Type": "Modern Supercars",
+    "Brand": "GT Spirit",
+    "Name": "2021 Aston Martin Valkyrie",
+    "Description": "The 2021 Aston Martin Valkyrie is a Formula 1 car for the street, and this cast resin model car showcases its extraordinary performance and design. With limited-edition status and features like massive cross-drilled brake rotors and calipers, rolling rubber tires, and a sealed cast resin body, this collectible is a must-have for Aston Martin enthusiasts and diecast collectors. Experience the pinnacle of automotive engineering with the Valkyrie proudly displayed in your diecast collection.",
+    "Price": 139.99
+  },
+  {
+    "Id": 74,
+    "Type": "Modern Supercars",
+    "Brand": "GT Spirit",
+    "Name": "2021 RWB Syunkashuto",
+    "Description": "The 2021 RWB Syunkashuto is a custom RWB 911 that takes performance to the next level, and this cast resin model car beautifully captures its unique essence. With riveted wide body fender flares, full ground effects performance package, high-mount rear wing, and a sealed cast resin body, this collectible showcases the extraordinary design of the RWB Porsche. Whether you're a fan of custom Porsches or appreciate exceptional car craftsmanship, the RWB Syunkashuto is a standout addition to your diecast collection.",
+    "Price": 139.99
+  },
+  {
+    "Id": 75,
+    "Type": "Modern Supercars",
+    "Brand": "GT Spirit",
+    "Name": "2022 BMW M4",
+    "Description": "Prepare to unleash the beast with the 2022 BMW M4 by AC Schnitzer in 1:18 scale, a cast resin model by GT Spirit. This limited-edition collectible boasts ground effects, a front splitter, and side sills that enhance its performance and style. With a heat extractor hood vent and rear diffuser, it exudes speed and aggression. The smooth-rolling low-profile performance rubber tires complete the package, making it a thrilling addition to any collection.",
+    "Price": 139.99
+  },
+  {
+    "Id": 76,
+    "Type": "Modern Supercars",
+    "Brand": "GT Spirit",
+    "Name": "Aston Martin V-12 Speedster",
+    "Description": "GT Spirit presents the Aston Martin V-12 Speedster in a luxurious green, a precision 1:18 scale cast resin model car that epitomizes elegance and performance. This model showcases the gorgeous all-new Aston Martin bodywork, a tribute to modern automotive art. Step into the world of masterful interior detailing that reflects the unparalleled sophistication of Aston Martin. The design is further accentuated with an authentic front splitter and side sills, alongside the distinctive driver and passenger roll hoops. The functionality meets form with massive rotors and calipers, underlining the power behind its beauty. The rolling rubber tires add a realistic touch to this sealed cast resin body, making it not just a model, but a piece of automotive history for enthusiasts and collectors alike. This Aston Martin V-12 Speedster is more than a model; it's a testament to the legacy of luxury and performance.",
+    "Price": 139.99
+  },
+  {
+    "Id": 77,
+    "Type": "Modern Supercars",
+    "Brand": "GT Spirit",
+    "Name": "Ford Mustang Dark Horse",
+    "Description": "Embrace the raw power and undeniable charisma of the Ford Mustang Dark Horse - Blue Limited Edition 1:18 Scale Cast Resin Model Car by GT Spirit. This exclusive cast resin model car, presented in a striking blue hue, is a limited edition masterpiece that captures the soul-stirring essence of the iconic Mustang. With meticulous full interior detailing and a faithful recreation of the Mustang's body curves and details through the precision of resin casting, this model is a true testament to GT Spirit's commitment to excellence. The full ground effects aero kit, trunk-mounted rear wing, massive rotors, and painted calipers contribute to the model's authenticity, while the smooth rolling rubber performance tires ensure an exhilarating display of muscle car prowess. For collectors and enthusiasts seeking the epitome of muscle car majesty in 1:18 scale, the Ford Mustang Dark Horse stands as a symbol of unbridled power and automotive artistry.",
+    "Price": 139.99
+  },
+  {
+    "Id": 78,
+    "Type": "Modern Supercars",
+    "Brand": "GT Spirit",
+    "Name": "Koenigsegg Jesko Attack",
+    "Description": "Immerse yourself in the realm of automotive excellence with the Koenigsegg Jesko Attack - Orange Limited Edition 1:18 Scale Cast Resin Model Car by GT Spirit. This exclusive cast resin model car, presented in a vibrant orange hue, is a limited edition masterpiece that leaves an indelible mark on the world of precision modeling. With full interior detailing and a meticulous recreation of the Jesko's incredible body curves and details through the art of resin casting, this model captures the essence of Koenigsegg's engineering prowess. The full ground effects aero kit, high mount rear wing, massive rotors, and painted calipers contribute to the model's authenticity, while the smooth rolling rubber performance tires provide the finishing touch. The Jesko Attack stands as a symbol of performance precision and automotive artistry in the 1:18 scale realm, making it a prized addition for collectors who seek the apex of model car excellence.",
+    "Price": 139.99
+  },
+  {
+    "Id": 79,
+    "Type": "Modern Supercars",
+    "Brand": "GT Spirit",
+    "Name": "2021 RIMAC Nevera",
+    "Description": "Witness the future of automotive engineering with the 2021 RIMAC Nevera masterfully recreated as a 1:18 scale cast resin collectible by GT Spirit. This limited-edition model pays tribute to one of only 150 RIMAC Nevera hypercars ever built. Its masterful interior details including a precisely molded die-cast metal body bring the essence of this all-electric hypercar to life. With mind-bending acceleration reaching 60 MPH in just 1.85 seconds the RIMAC Nevera is a true marvel of modern engineering. This sealed cast resin model captures the essence of this groundbreaking hypercar making it a must-have for collectors and enthusiasts who appreciate automotive innovation.",
+    "Price": 119.98
+  },
+  {
+    "Id": 80,
+    "Type": "Modern Supercars",
+    "Brand": "Bburago",
+    "Name": "2023 SFR Ferrari Team Race Car - Leclerc #16",
+    "Description": "Get ready to experience the excitement of race day with the 2023 SFR Ferrari Team Race Car in a 1:18 scale model by Bburago. This die-cast model features a full die-cast metal body adorned with authentic race day graphics and full sponsor logos. Its smooth-rolling rubber race tires are ready to grip the track, making it an ideal addition for motorsport enthusiasts and collectors alike. With meticulous attention to detail, this model captures the essence of competitive racing, and the Leclerc #16 livery adds an extra layer of authenticity. Embrace the world of motorsport with this dynamic Ferrari Team Race Car.",
+    "Price": 67.99
+  },
+  {
+    "Id": 81,
+    "Type": "Modern Supercars",
+    "Brand": "Solido",
+    "Name": "2023 Alfa Romeo F1 C43 Z.Guanyu",
+    "Description": "Explore the precision and agility of the 2023 Alfa Romeo F1 C43 Z.Guanyu as it blazes through the Spanish GP with Solido's 1:18 scale diecast model car. This officially licensed replica opens its doors to reveal a meticulously detailed interior, offering a glimpse into the cockpit of Formula 1 racing. With posable front wheels for dynamic display, the model boasts a highly accurate diecast body and intricate details that capture the essence of Alfa Romeo's racing prowess. Smooth rolling rubber tires ensure seamless movement, making it a must-have for collectors and fans who appreciate the speed and craftsmanship of Formula 1 cars.",
+    "Price": 64.99
+  },
+  {
+    "Id": 82,
+    "Type": "Modern Supercars",
+    "Brand": "Solido",
+    "Name": "2020 Nissan GT-R (R35)",
+    "Description": "Witness automotive artistry with Solido's 1:18 scale diecast model, featuring the 2020 Nissan GT-R (R35) adorned with the iconic Liberty Walk Body Kit 2.0, presented in a bold yellow finish. This precision-crafted replica opens its doors to reveal a fully detailed interior, and posable front wheels add an authentic touch to the design. The model showcases the GT-R's aggressive stance with authentic paint and graphics, complemented by smooth-rolling rubber tires and an intricately reproduced wheel design. As an officially licensed diecast collectible, Solido captures the essence of automotive customization, providing enthusiasts and collectors a chance to own a vividly detailed piece of the modern automotive scene with this thrilling 2020 Nissan GT-R model.",
+    "Price": 59.99
+  },
+  {
+    "Id": 83,
+    "Type": "Modern Supercars",
+    "Brand": "Solido",
+    "Name": "2023 Toyota GR Supra Streetfighter",
+    "Description": "Prepare to unleash the streetfighter with the 2023 Toyota GR Supra. This 1:18 scale diecast model, measuring 9 1/2 inches in length, is a force to be reckoned with. Featuring precision diecast construction, it offers openable doors and a full interior detailing that brings the Supra's style to life. Ground effects, front splitter, side sills, rear diffuser, and a high-mount rear wing add a touch of aggression, while massive brake rotors and calipers ensure it can stop as well as it goes. With Streetfighter wheels and tire package, it's a beast that's ready to rule the streets.",
+    "Price": 54.99
+  },
+  {
+    "Id": 84,
+    "Type": "Modern Supercars",
+    "Brand": "Bburago",
+    "Name": "Bugatti Bolide",
+    "Description": "Embrace the thrill of track racing with the Bugatti Bolide in striking blue. This 1:18 scale diecast model car by Bburago features precision details, including opening doors and full interior detailing. With its massive front splitter, dorsal spine, high-mount rear wing, and smooth rolling rubber performance tires, the Bugatti Bolide is a true track beast. Be among the first to own this all-new hypercar and add a touch of racing excellence to your collection.",
+    "Price": 48.99
+  },
+  {
+    "Id": 85,
+    "Type": "Modern Supercars",
+    "Brand": "Bburago",
+    "Name": "Ferrari 296 GTB",
+    "Description": "Experience excellence with the 1:18 scale Ferrari 296 GTB R&P in Red by Bburago Diecast Model Car. This precision diecast model, measuring 10 inches long, captures the essence of the Ferrari 296 GTB, powered by a twin-turbocharged V-6 engine. The hood and doors open to reveal a full interior detailing. With smooth rolling high-performance rubber tires, this diecast model embodies the elegance and power of a Ferrari with a V-6 engine.",
+    "Price": 44.99
+  },
+  {
+    "Id": 86,
+    "Type": "Modern Supercars",
+    "Brand": "Bburago",
+    "Name": "Ferrari SF90 Stradale",
+    "Description": "Ferrari SF90 Stradale R&P - Red 1:18 Scale Diecast Model Car by Bburago",
+    "Price": 44.99
+  },
+  {
+    "Id": 87,
+    "Type": "Modern Supercars",
+    "Brand": "Maisto",
+    "Name": "2020 Mustang Shelby G.T. 500",
+    "Description": "Experience the raw power of the 2020 Mustang Shelby G.T. 500 in this 1:18 scale diecast model car featuring a striking white finish with blue stripes. Precision diecast collectible features openable hood, doors, and trunk, revealing a massive V-8 engine under the hood and a full Shelby G.T. 500 interior. The authentic front splitter, side skirts, rear wing, and ground effects package add to its appeal. With massive mag wheels and smooth rolling high-performance rubber tires, this model is a true symbol of American muscle.",
+    "Price": 36.99
+  },
+
+
+
+
+  {
+    "Id": 88,
+    "Type": "Motorcycles",
+    "Brand": "Maisto",
+    "Name": "2013 Harley FLHRC Road King Classic",
+    "Description": "Experience the iconic Harley-Davidson mystique with the 2013 Harley FLHRC Road King Classic at 1:12 scale and 6 inches long by Maisto. This fully licensed die-cast model features a brilliant chrome engine, front forks, and exhaust pipes. With a working kickstand and steerable front wheel, this collectible brings the road king's classic style to life. Whether you're a motorcycle enthusiast or a die-cast collector, add a touch of Harley flair to your display with this meticulously crafted Road King Classic.",
+    "Price": 15.99
+  },
+  {
+    "Id": 89,
+    "Type": "Motorcycles",
+    "Brand": "Maisto",
+    "Name": "1953 74FL Harley-Davidson Hydra Glide",
+    "Description": "Embrace the timeless allure of the 1953 Harley-Davidson Hydra Glide with Maisto's 1:18 scale diecast model motorcycle. This precision-crafted model showcases the iconic Panhead engine, suspension forks, and authentic gas tank and fenders, all meticulously detailed. With beautifully chromed spoke wheels, a handlebar that turns the front wheels, and smooth-rolling rubber tires, this classic Harley-Davidson replica captures the essence of the open road and stands as a true testament to the brand's enduring legacy. Collectors and enthusiasts alike will appreciate the craftsmanship of this iconic motorcycle model.",
+    "Price": 8.99
+  },
+
+
+
+  {
+    "Id": 90,
+    "Type": "Construction",
+    "Brand": "First Gear",
+    "Name": "Komatsu D375A-8 Dozer with Ripper",
+    "Description": "This authentic Komatsu D375A-8 Dozer with Ripper diecast metal replica model features an adjustable full U-blade, accurately detailed operator control center, working segmented metal tracks with poseable single shank ripper. This quality replica is decorated with a yellow paint scheme.",
+    "Price": 134.99
+  },
+  {
+    "Id": 91,
+    "Type": "Construction",
+    "Brand": "First Gear",
+    "Name": "Mack Granite MP Dump Truck",
+    "Description": "Embrace the rugged functionality of the Mack Granite MP Dump Truck, a robust 1:34 scale diecast model crafted by First Gear. This limited edition piece showcases the strength and durability synonymous with Mack Trucks, featuring a hood that hinges forward to reveal a fully wired and plumbed engine, adding an impressive level of detail. The model's dump body tilts and includes an operational tailgate, perfect for realistic loading and unloading scenarios. The truck is finished with full cab interior detailing, a detailed chassis and undercarriage, and authentically replicated paint and graphics. Chrome mirrors are included separately in the box to ensure safe delivery and precision application. This Mack Granite MP Dump Truck model is an essential addition for any diecast truck collector or construction equipment enthusiast.",
+    "Price": 129.99
+  },
+  {
+    "Id": 92,
+    "Type": "Construction",
+    "Brand": "First Gear",
+    "Name": "Komatsu HD605-8 Dump Truck",
+    "Description": "This authentic Komatsu HD605-8 Dump Truck diecast metal construction replica model comes with an accurately detailed operator control center, and tilting dump body that can be locked to display in the up position, poseable front wheels and diecast railings and stairs. Comes with a set of chock blocks. This quality replica is decorated with a yellow paint scheme. This 1/50 scale replica measures approximately 8.5 long, 3.5 wide, and 3.75 high.",
+    "Price": 109.99
+  },
+  {
+    "Id": 93,
+    "Type": "Construction",
+    "Brand": "First Gear",
+    "Name": "Komatsu D65EX-17 SIGMA Dozer with Ripper",
+    "Description": "Delve into the earth with precision and power using the Komatsu D65EX-17 SIGMA Dozer with Ripper, a 1:50 scale diecast model by First Gear. This limited edition construction vehicle brings to life Komatsu's renowned engineering, featuring rotating metal tracks that tackle any terrain and an adjustable dozer blade that moves up and down for realistic operation. The posable multi-shank rear ripper is ready to break through even the toughest materials, enhancing the functional appeal of this model. Detailed cab and operator controls add an extra layer of authenticity, complemented by authentic paint and graphics that mirror the real-life machinery. Perfect for collectors and construction enthusiasts, this model encapsulates the robustness and efficiency of the Komatsu legacy.",
+    "Price": 86.99
+  },
+  {
+    "Id": 94,
+    "Type": "Construction",
+    "Brand": "First Gear",
+    "Name": "Komatsu PC78US-11 Excavator",
+    "Description": "This authentic Komatsu PC78US-11 Excavator diecast metal replica model features 360 degree rotation between the track frame, machine base and operate cab, fully functioning boom, arm and bucket, metal blade, accurately detailed cab interior, and free rolling tracks. This quality replica is decorated with a yellow paint scheme. This 1/50 scale replica measures approximately 4.75 long, 2 wide, 2.25 high.",
+    "Price": 69.99
+  },
+  {
+    "Id": 95,
+    "Type": "Construction",
+    "Brand": "First Gear",
+    "Name": "JCB 512-83R Rotating Telescopic Handler",
+    "Description": "Elevate your construction capabilities with the JCB 512-83R Rotating Telescopic Handler, a finely detailed 1:34 scale diecast model by First Gear. As a testament to JCB's engineering excellence, this limited edition model features fully functional outriggers that extend and lower, and a boom that extends, lowers, and rotates 360 degrees along with the cab. The posable front and rear wheels enhance its display flexibility, making it perfect for diorama setups or as a standalone piece. Detailed with an authentic cab interior and finished with precise paint and graphics, this JCB telescopic handler captures the essence of a true workhorse on the modern construction site. Add this model to your collection to appreciate the blend of utility and meticulous craftsmanship.",
+    "Price": 64.99
+  },
+
+
+
+  {
+    "Id": 96,
+    "Type": "Prewar Classics",
+    "Brand": "Auto World",
+    "Name": "1937 Lincoln Zephyr",
+    "Description": "Experience elegance in motion with the 1937 Lincoln Zephyr, a 1:18 scale diecast model by Auto World. This limited-edition diecast model opens up a world of details, with its hood, doors, and trunk that open to reveal a fully plumbed and wired V-12 engine. Inside, the masterful interior detailing and swept-back chrome grille capture the essence of a bygone era. Loaded with gleaming chrome trim and featuring steerable front wheels and smooth-rolling rubber tires, it's a true collector's gem. Own a piece of automotive history with this remarkable diecast model.",
+    "Price": 99.99
+  },
+  {
+    "Id": 97,
+    "Type": "Prewar Classics",
+    "Brand": "Maisto",
+    "Name": "1936 Mercedes 500 K Special Roadster",
+    "Description": "Style. Power. Elegance. The Mercedes 500K is one of the world's greatest prewar roadsters. This elegantly appointed die cast is truly a work of art with its massive chrome grille, dual horns and triple lantern headlights. The butterfly-hood reveals the fully wired straight-eight engine. The interior is brilliantly authentic. Even the rumble seat opens!",
+    "Price": 54.99
+  },
+  {
+    "Id": 98,
+    "Type": "Prewar Classics",
+    "Brand": "Maisto",
+    "Name": "1939 Ford DeLuxe Coupe",
+    "Description": "Ford introduced their upscale DeLuxe line to bridge the gap between standard Fords and the luxury Lincoln line. This 1939 DeLuxe diecast features the art deco style sloping hood and razor sharp vertical grille that were unique to the DeLuxe models. Check out the finely crafted teardrop headlight lenses, detailed flathead V-8 and well-appointed wood-grained interior. Gorgeous!",
+    "Price": 36.99
+  },
+  {
+    "Id": 99,
+    "Type": "Prewar Classics",
+    "Brand": "Esval Models",
+    "Name": "1930 Pierce Arrow Model B Roadster",
+    "Description": "Introducing the limited edition 1930 Pierce Arrow Model B Roadster by Esval Models, a prized addition to any diecast collection. With only 250 units produced, this meticulously crafted model captures the essence of luxury and sophistication from the golden age of motoring. Each piece is masterfully finished by hand, showcasing incredible interior detailing and adorned with dozens of individual chrome parts. Packaged in a custom display case and equipped with rolling rubber tires, this model epitomizes the timeless elegance of the Pierce Arrow brand.",
+    "Price": 99.99
+  },
+  {
+    "Id": 100,
+    "Type": "Prewar Classics",
+    "Brand": "Esval Models",
+    "Name": "1929 Cord L-29 coupe by Hayes",
+    "Description": "Presenting the limited edition 1929 Cord L-29 Coupe by Hayes model car, a true gem in the world of collectibles. With only 250 units available, this exquisite replica from Esval Models captures the timeless elegance of the iconic Cord L-29. Meticulously crafted and finished by hand, each model showcases incredible interior detailing and features dozens of individual chrome parts. Packaged in a custom display case and equipped with rolling rubber tires, this model is a testament to automotive craftsmanship and a must-have for collectors of classic automobiles.",
+    "Price": 99.99
+  },
+  {
+    "Id": 101,
+    "Type": "Prewar Classics",
+    "Brand": "Esval Models",
+    "Name": "1928 Cadillac 341A Town Sedan",
+    "Description": "Introducing the limited edition 1928 Cadillac 341A Town Sedan model car, a collector's dream brought to life by Esval Models. With only 250 units available, this exquisite replica captures the elegance and grandeur of the vintage Cadillac Town Sedan. Each model is meticulously crafted and finished by hand, boasting incredible interior detailing and dozens of individual chrome parts. Packaged in a custom display case, complete with rolling rubber tires, this model is a true testament to automotive craftsmanship and a prized addition to any collection.",
+    "Price": 99.99
+  },
+  {
+    "Id": 102,
+    "Type": "Prewar Classics",
+    "Brand": "Motormax",
+    "Name": "1949 Mercury Coupe",
+    "Description": "Mercury's all new 'inverted bathtub' 1949 coupe was so successful…James Dean drove one in Rebel Without a Cause. This diecast American classic recreates the legend with a Flathead V-8 under the hood, detailed interior and brilliant chrome!",
+    "Price": 17.99
+  },
+  {
+    "Id": 103,
+    "Type": "Prewar Classics",
+    "Brand": "Esval Models",
+    "Name": "1947 Delahaye 135M Vedette cabriolet",
+    "Description": "Experience the epitome of automotive elegance with the limited edition 1947 Delahaye 135M Vedette cabriolet by Henri Chapron. Crafted at a 1:43 scale by Esval Models, this exquisite cast resin model captures the essence of luxury and sophistication. Limited to just 250 units, each meticulously finished by hand, it boasts incredible interior detailing and features dozens of individual chrome parts. Presented in a custom display case and equipped with rolling rubber tires, this model pays homage to the timeless beauty of the Delahaye brand.",
+    "Price": 99.99
+  }
+]

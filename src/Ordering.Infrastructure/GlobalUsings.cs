@@ -1,0 +1,12 @@
+﻿global using System.Data;
+global using MediatR;
+global using Microsoft.EntityFrameworkCore;
+global using Microsoft.EntityFrameworkCore.Design;
+global using Microsoft.EntityFrameworkCore.Metadata.Builders;
+global using Microsoft.EntityFrameworkCore.Storage;
+global using CollectibleDiecast.Ordering.Domain.AggregatesModel.BuyerAggregate;
+global using CollectibleDiecast.Ordering.Domain.AggregatesModel.OrderAggregate;
+global using CollectibleDiecast.Ordering.Domain.Exceptions;
+global using CollectibleDiecast.Ordering.Domain.Seedwork;
+global using CollectibleDiecast.Ordering.Infrastructure.EntityConfigurations;
+global using CollectibleDiecast.Ordering.Infrastructure.Idempotency;

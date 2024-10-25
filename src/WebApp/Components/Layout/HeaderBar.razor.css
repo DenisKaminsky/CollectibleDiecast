@@ -1,0 +1,151 @@
+﻿.collectibleDiecast-header {
+    position: relative;
+    max-width: 120rem;
+    margin: auto;
+}
+
+.collectibleDiecast-header.home .collectibleDiecast-header-container {
+    height: 38rem;
+    margin-bottom: 0;
+}
+
+.collectibleDiecast-header .collectibleDiecast-header-container {
+    height: 15rem;
+    margin-bottom: 4rem;
+}
+
+.collectibleDiecast-header-hero {
+    overflow: hidden;
+    position: absolute;
+    max-width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.collectibleDiecast-header-container {
+    position: relative;
+    margin: auto;
+    margin: 0 10rem;
+}
+
+.collectibleDiecast-header-intro {
+    position: absolute;
+    max-width: 48rem;
+    bottom: 3rem;
+    white-space: nowrap;
+}
+
+.collectibleDiecast-header-intro h1 {
+    color: orange;
+    font-size: 3.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    margin: 0;
+}
+
+.collectibleDiecast-header-intro p {
+    color: #000;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 125%;
+    margin: 0;
+}
+
+.collectibleDiecast-header .logo-header {
+    color: black;
+    margin-right: auto;
+    width: 20vw;
+    height: auto;
+    max-width: 250px;
+    min-width: 100px;
+}
+
+.collectibleDiecast-header-navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 1.25rem;
+    gap: 1.5rem;
+}
+
+@media only screen and (max-width: 480px) { 
+    .collectibleDiecast-header-hero {
+        height: 18rem;
+    }
+
+    .collectibleDiecast-header-hero img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .collectibleDiecast-header .collectibleDiecast-header-container {
+        height: 15rem;
+        margin-bottom: 4rem;
+    }
+
+    .collectibleDiecast-header-container {
+        margin: 0 1rem;
+    }
+
+    .collectibleDiecast-header.home .collectibleDiecast-header-container {
+        height: 18rem;
+        margin: 0 1rem;
+    }
+
+    .collectibleDiecast-header-intro {
+        white-space: wrap;
+        bottom: 0;
+    }
+
+    .collectibleDiecast-header-intro h1 {
+        font-size: 2rem;
+    }
+    
+    .collectibleDiecast-header-intro p {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 1024px) { 
+    .collectibleDiecast-header.home .collectibleDiecast-header-hero {
+        height: 24rem;
+    }
+
+    .collectibleDiecast-header .collectibleDiecast-header-hero {
+        height: 15rem;
+    }
+
+    .collectibleDiecast-header-hero img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .collectibleDiecast-header-container {
+        margin: 0 1rem;
+        margin: 0 3rem;
+    }
+
+    .collectibleDiecast-header.home .collectibleDiecast-header-container {
+        height: 24rem;
+        margin: 0 3rem;
+    }
+
+    .collectibleDiecast-header-intro {
+        white-space: wrap;
+    }
+
+    .collectibleDiecast-header-intro h1 {
+        font-size: 2rem;
+    }
+    
+    .collectibleDiecast-header-intro p {
+        font-size: 1.5rem;
+    }
+}

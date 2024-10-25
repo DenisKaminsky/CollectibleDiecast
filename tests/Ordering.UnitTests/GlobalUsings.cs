@@ -1,0 +1,14 @@
+﻿global using MediatR;
+global using Microsoft.AspNetCore.Mvc;
+global using CollectibleDiecast.Ordering.API.Application.Commands;
+global using CollectibleDiecast.Ordering.API.Application.Models;
+global using CollectibleDiecast.Ordering.API.Infrastructure.Services;
+global using CollectibleDiecast.Ordering.Domain.AggregatesModel.BuyerAggregate;
+global using CollectibleDiecast.Ordering.Domain.Events;
+global using CollectibleDiecast.Ordering.Domain.Exceptions;
+global using CollectibleDiecast.Ordering.Domain.SeedWork;
+global using CollectibleDiecast.Ordering.Infrastructure.Idempotency;
+global using Microsoft.Extensions.Logging;
+global using NSubstitute;
+global using CollectibleDiecast.Ordering.UnitTests;
+global using Microsoft.VisualStudio.TestTools.UnitTesting;

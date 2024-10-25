@@ -1,0 +1,33 @@
+﻿@using Microsoft.AspNetCore.Components.Endpoints
+
+<div class="collectibleDiecast-header @(IsCatalog? "home" : "")">
+    <div class="collectibleDiecast-header-hero">
+        @{
+            var headerImage = IsCatalog ? "images/header-home.jpg" : "images/header.jpg";
+        }
+        <img role="presentation" src="@headerImage" />
+    </div>
+    <div class="collectibleDiecast-header-container">
+        <nav class="collectibleDiecast-header-navbar">
+            <a class="logo logo-header" href="">
+                <img alt="Collectible Diecast" src="images/logo-header.svg" class="logo logo-header" />
+            </a>
+            
+            <UserMenu />
+            <CartMenu />
+        </nav>
+        <div class="collectibleDiecast-header-intro">
+            <h1><SectionOutlet SectionName="page-header-title" /></h1>
+            <p><SectionOutlet SectionName="page-header-subtitle" /></p>
+        </div>
+    </div>
+</div>
+
+@code {
+    [CascadingParameter]
+    public HttpContext? HttpContext { get; set; }
+
+    // We can use Endpoint Metadata to determine the page currently being visited
+    private Type? PageComponentType => HttpContext?.GetEndpoint()?.Metadata.OfType<ComponentTypeMetadata>().FirstOrDefault()?.Type;
+    private bool IsCatalog => PageComponentType == typeof(Pages.Catalog.Catalog);
+}
