@@ -1,7 +1,6 @@
 ﻿using Asp.Versioning;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Routing;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -29,6 +28,7 @@ public static partial class Extensions
             {
                 // Disable default fonts to avoid download unnecessary fonts
                 options.DefaultFonts = false;
+                options.WithTheme(ScalarTheme.Mars);
             });
             app.MapGet("/", () => Results.Redirect("/scalar/v1")).ExcludeFromDescription();
         }

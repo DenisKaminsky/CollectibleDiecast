@@ -1,5 +1,4 @@
 ﻿using Asp.Versioning.Builder;
-
 var builder = WebApplication.CreateBuilder(args);
 
 builder.AddServiceDefaults();

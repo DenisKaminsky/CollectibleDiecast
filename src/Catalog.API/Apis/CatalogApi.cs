@@ -33,7 +33,7 @@ public static class CatalogApi
         return app;
     }
 
-    public static async Task<Results<Ok<PaginatedItems<CatalogItem>>, BadRequest<string>>> GetAllItems(
+    public static async Task<Results<Ok<PagedResponse<CatalogItem>>, BadRequest<string>>> GetAllItems(
         [AsParameters] PaginationRequest paginationRequest,
         [AsParameters] CatalogServices services)
     {
@@ -49,7 +49,7 @@ public static class CatalogApi
             .Take(pageSize)
             .ToListAsync();
 
-        return TypedResults.Ok(new PaginatedItems<CatalogItem>(pageIndex, pageSize, totalItems, itemsOnPage));
+        return TypedResults.Ok(new PagedResponse<CatalogItem>(pageIndex, pageSize, totalItems, itemsOnPage));
     }
 
     public static async Task<Ok<List<CatalogItem>>> GetItemsByIds(
@@ -79,7 +79,7 @@ public static class CatalogApi
         return TypedResults.Ok(item);
     }
 
-    public static async Task<Ok<PaginatedItems<CatalogItem>>> GetItemsByName(
+    public static async Task<Ok<PagedResponse<CatalogItem>>> GetItemsByName(
         [AsParameters] PaginationRequest paginationRequest,
         [AsParameters] CatalogServices services,
         string name)
@@ -97,7 +97,7 @@ public static class CatalogApi
             .Take(pageSize)
             .ToListAsync();
 
-        return TypedResults.Ok(new PaginatedItems<CatalogItem>(pageIndex, pageSize, totalItems, itemsOnPage));
+        return TypedResults.Ok(new PagedResponse<CatalogItem>(pageIndex, pageSize, totalItems, itemsOnPage));
     }
 
     public static async Task<Results<NotFound, PhysicalFileHttpResult>> GetItemPictureById(CatalogContext context, IWebHostEnvironment environment, int catalogItemId)
@@ -118,7 +118,7 @@ public static class CatalogApi
         return TypedResults.PhysicalFile(path, mimetype, lastModified: lastModified);
     }
 
-    public static async Task<Results<BadRequest<string>, RedirectToRouteHttpResult, Ok<PaginatedItems<CatalogItem>>>> GetItemsBySemanticRelevance(
+    public static async Task<Results<BadRequest<string>, RedirectToRouteHttpResult, Ok<PagedResponse<CatalogItem>>>> GetItemsBySemanticRelevance(
         [AsParameters] PaginationRequest paginationRequest,
         [AsParameters] CatalogServices services,
         string text)
@@ -162,10 +162,10 @@ public static class CatalogApi
                 .ToListAsync();
         }
 
-        return TypedResults.Ok(new PaginatedItems<CatalogItem>(pageIndex, pageSize, totalItems, itemsOnPage));
+        return TypedResults.Ok(new PagedResponse<CatalogItem>(pageIndex, pageSize, totalItems, itemsOnPage));
     }
 
-    public static async Task<Ok<PaginatedItems<CatalogItem>>> GetItemsByBrandAndTypeId(
+    public static async Task<Ok<PagedResponse<CatalogItem>>> GetItemsByBrandAndTypeId(
         [AsParameters] PaginationRequest paginationRequest,
         [AsParameters] CatalogServices services,
         int typeId,
@@ -189,10 +189,10 @@ public static class CatalogApi
             .Take(pageSize)
             .ToListAsync();
 
-        return TypedResults.Ok(new PaginatedItems<CatalogItem>(pageIndex, pageSize, totalItems, itemsOnPage));
+        return TypedResults.Ok(new PagedResponse<CatalogItem>(pageIndex, pageSize, totalItems, itemsOnPage));
     }
 
-    public static async Task<Ok<PaginatedItems<CatalogItem>>> GetItemsByBrandId(
+    public static async Task<Ok<PagedResponse<CatalogItem>>> GetItemsByBrandId(
         [AsParameters] PaginationRequest paginationRequest,
         [AsParameters] CatalogServices services,
         int? brandId)
@@ -215,7 +215,7 @@ public static class CatalogApi
             .Take(pageSize)
             .ToListAsync();
 
-        return TypedResults.Ok(new PaginatedItems<CatalogItem>(pageIndex, pageSize, totalItems, itemsOnPage));
+        return TypedResults.Ok(new PagedResponse<CatalogItem>(pageIndex, pageSize, totalItems, itemsOnPage));
     }
 
     public static async Task<Results<Created, NotFound<string>>> UpdateItem(
