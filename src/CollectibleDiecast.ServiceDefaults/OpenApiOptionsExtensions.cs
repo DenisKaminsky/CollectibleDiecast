@@ -178,7 +178,6 @@ internal static class OpenApiOptionsExtensions
                 Type = SecuritySchemeType.OAuth2,
                 Flows = new OpenApiOAuthFlows()
                 {
-                    // TODO: Change this to use Authorization Code flow with PKCE
                     Implicit = new OpenApiOAuthFlow()
                     {
                         AuthorizationUrl = new Uri($"{identityUrlExternal}/connect/authorize"),

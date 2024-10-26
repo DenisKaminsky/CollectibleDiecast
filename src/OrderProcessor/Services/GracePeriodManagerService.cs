@@ -5,29 +5,41 @@ using CollectibleDiecast.OrderProcessor.Events;
 
 namespace CollectibleDiecast.OrderProcessor.Services
 {
-    public class GracePeriodManagerService(
-        IOptions<BackgroundTaskOptions> options,
-        IEventBus eventBus,
-        ILogger<GracePeriodManagerService> logger,
-        NpgsqlDataSource dataSource) : BackgroundService
+    public class GracePeriodManagerService : BackgroundService
     {
-        private readonly BackgroundTaskOptions _options = options?.Value ?? throw new ArgumentNullException(nameof(options));
+        private readonly BackgroundTaskOptions _options;
+        private readonly IEventBus _eventBus;
+        private readonly ILogger<GracePeriodManagerService> _logger;
+        private readonly NpgsqlDataSource _dataSource;
+
+        public GracePeriodManagerService(
+            IOptions<BackgroundTaskOptions> options,
+            IEventBus eventBus,
+            ILogger<GracePeriodManagerService> logger,
+            NpgsqlDataSource dataSource)
+        {
+            _options = options?.Value ?? throw new ArgumentNullException(nameof(options));
+            _eventBus = eventBus;
+            _logger = logger;
+            _dataSource = dataSource;
+        }
+        
 
         protected override async Task ExecuteAsync(CancellationToken stoppingToken)
         {
             var delayTime = TimeSpan.FromSeconds(_options.CheckUpdateTime);
 
-            if (logger.IsEnabled(LogLevel.Debug))
+            if (_logger.IsEnabled(LogLevel.Debug))
             {
-                logger.LogDebug("GracePeriodManagerService is starting.");
-                stoppingToken.Register(() => logger.LogDebug("GracePeriodManagerService background task is stopping."));
+                _logger.LogDebug("GracePeriodManagerService is starting.");
+                stoppingToken.Register(() => _logger.LogDebug("GracePeriodManagerService background task is stopping."));
             }
 
             while (!stoppingToken.IsCancellationRequested)
             {
-                if (logger.IsEnabled(LogLevel.Debug))
+                if (_logger.IsEnabled(LogLevel.Debug))
                 {
-                    logger.LogDebug("GracePeriodManagerService background task is doing background work.");
+                    _logger.LogDebug("GracePeriodManagerService background task is doing background work.");
                 }
 
                 await CheckConfirmedGracePeriodOrders();
@@ -35,17 +47,17 @@ namespace CollectibleDiecast.OrderProcessor.Services
                 await Task.Delay(delayTime, stoppingToken);
             }
 
-            if (logger.IsEnabled(LogLevel.Debug))
+            if (_logger.IsEnabled(LogLevel.Debug))
             {
-                logger.LogDebug("GracePeriodManagerService background task is stopping.");
+                _logger.LogDebug("GracePeriodManagerService background task is stopping.");
             }
         }
 
         private async Task CheckConfirmedGracePeriodOrders()
         {
-            if (logger.IsEnabled(LogLevel.Debug))
+            if (_logger.IsEnabled(LogLevel.Debug))
             {
-                logger.LogDebug("Checking confirmed grace period orders");
+                _logger.LogDebug("Checking confirmed grace period orders");
             }
 
             var orderIds = await GetConfirmedGracePeriodOrders();
@@ -54,9 +66,9 @@ namespace CollectibleDiecast.OrderProcessor.Services
             {
                 var confirmGracePeriodEvent = new GracePeriodConfirmedIntegrationEvent(orderId);
 
-                logger.LogInformation("Publishing integration event: {IntegrationEventId} - ({@IntegrationEvent})", confirmGracePeriodEvent.Id, confirmGracePeriodEvent);
+                _logger.LogInformation("Publishing integration event: {IntegrationEventId} - ({@IntegrationEvent})", confirmGracePeriodEvent.Id, confirmGracePeriodEvent);
 
-                await eventBus.PublishAsync(confirmGracePeriodEvent);
+                await _eventBus.PublishAsync(confirmGracePeriodEvent);
             }
         }
 
@@ -64,7 +76,7 @@ namespace CollectibleDiecast.OrderProcessor.Services
         {
             try
             {
-                using var conn = dataSource.CreateConnection();
+                using var conn = _dataSource.CreateConnection();
                 using var command = conn.CreateCommand();
                 command.CommandText = """
                     SELECT "Id"
@@ -73,7 +85,7 @@ namespace CollectibleDiecast.OrderProcessor.Services
                     """;
                 command.Parameters.AddWithValue("GracePeriodTime", TimeSpan.FromMinutes(_options.GracePeriodTime));
 
-                List<int> ids = [];
+                List<int> ids = new List<int>();
 
                 await conn.OpenAsync();
                 using var reader = await command.ExecuteReaderAsync();
@@ -86,10 +98,10 @@ namespace CollectibleDiecast.OrderProcessor.Services
             }
             catch (NpgsqlException exception)
             {
-                logger.LogError(exception, "Fatal error establishing database connection");
+                _logger.LogError(exception, "Fatal error establishing database connection");
             }
 
-            return [];
+            return new List<int>();
         }
     }
 }

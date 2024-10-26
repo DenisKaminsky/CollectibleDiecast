@@ -57,8 +57,11 @@ public static partial class Extensions
         builder.Services.AddOpenTelemetry()
             .WithMetrics(metrics =>
             {
+                //Measures HTTP server metrics like request counts, latencies, etc.
                 metrics.AddAspNetCoreInstrumentation()
+                    //Monitors outbound HTTP request performance.
                     .AddHttpClientInstrumentation()
+                    //Captures .NET runtime metrics such as memory usage and garbage collection.
                     .AddRuntimeInstrumentation()
                     .AddMeter("Experimental.Microsoft.Extensions.AI");
             })
