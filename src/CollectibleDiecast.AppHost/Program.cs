@@ -6,6 +6,7 @@ builder.AddForwardedHeaders();
 
 var redis = builder.AddRedis("redis");
 var rabbitMq = builder.AddRabbitMQ("eventbus")
+    .WithManagementPlugin()
     .WithLifetime(ContainerLifetime.Persistent);
 var postgres = builder.AddPostgres("postgres")
     .WithImage("ankane/pgvector")

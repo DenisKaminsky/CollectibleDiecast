@@ -1,4 +1,6 @@
 ﻿using CollectibleDiecast.Catalog.API.Services;
+using CollectibleDiecast.EventBus.Extensions;
+using CollectibleDiecast.EventBusRabbitMQ;
 using Microsoft.Extensions.AI;
 using OpenAI;
 

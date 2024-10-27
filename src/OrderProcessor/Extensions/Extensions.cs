@@ -1,4 +1,6 @@
 ﻿using System.Text.Json.Serialization;
+using CollectibleDiecast.EventBus.Extensions;
+using CollectibleDiecast.EventBusRabbitMQ;
 using CollectibleDiecast.OrderProcessor.Events;
 
 namespace CollectibleDiecast.OrderProcessor.Extensions;

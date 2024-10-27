@@ -7,6 +7,9 @@ using Microsoft.Extensions.AI;
 using Microsoft.IdentityModel.JsonWebTokens;
 using CollectibleDiecast.WebApp.Services.OrderStatus.IntegrationEvents;
 using CollectibleDiecast.Basket.API.Grpc;
+using CollectibleDiecast.EventBus.Abstractions;
+using CollectibleDiecast.EventBus.Extensions;
+using CollectibleDiecast.EventBusRabbitMQ;
 using OpenAI;
 
 public static class Extensions
@@ -15,7 +18,7 @@ public static class Extensions
     {
         builder.AddAuthenticationServices();
 
-        builder.AddRabbitMqEventBus("EventBus")
+        builder.AddRabbitMqEventBus("eventbus")
                .AddEventBusSubscriptions();
 
         builder.Services.AddHttpForwarderWithServiceDiscovery();

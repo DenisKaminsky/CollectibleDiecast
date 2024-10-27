@@ -1,7 +1,7 @@
-﻿using CollectibleDiecast.EventBusRabbitMQ;
-using Microsoft.Extensions.DependencyInjection;
+﻿using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
 
-namespace Microsoft.Extensions.Hosting;
+namespace CollectibleDiecast.EventBusRabbitMQ;
 
 public static class RabbitMqDependencyInjectionExtensions
 {
@@ -22,28 +22,28 @@ public static class RabbitMqDependencyInjectionExtensions
         {
             ((ConnectionFactory)factory).DispatchConsumersAsync = true;
         });
-
-        // RabbitMQ.Client doesn't have built-in support for OpenTelemetry, so we need to add it ourselves
-        builder.Services.AddOpenTelemetry()
-           .WithTracing(tracing =>
-           {
-               tracing.AddSource(RabbitMQTelemetry.ActivitySourceName);
-           });
-
+        
         // Options support
         builder.Services.Configure<EventBusOptions>(builder.Configuration.GetSection(SectionName));
-
-        // Abstractions on top of the core client API
-        builder.Services.AddSingleton<RabbitMQTelemetry>();
+        
         builder.Services.AddSingleton<IEventBus, RabbitMQEventBus>();
+
         // Start consuming messages as soon as the application starts
         builder.Services.AddSingleton<IHostedService>(sp => (RabbitMQEventBus)sp.GetRequiredService<IEventBus>());
 
         return new EventBusBuilder(builder.Services);
     }
 
-    private class EventBusBuilder(IServiceCollection services) : IEventBusBuilder
+    private class EventBusBuilder : IEventBusBuilder
     {
-        public IServiceCollection Services => services;
+        private readonly IServiceCollection _services;
+
+        public IServiceCollection Services => _services;
+
+        public EventBusBuilder(IServiceCollection services)
+        {
+            _services = services;
+        }
+        
     }
 }

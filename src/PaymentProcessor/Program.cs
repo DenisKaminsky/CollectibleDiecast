@@ -1,8 +1,11 @@
-﻿var builder = WebApplication.CreateBuilder(args);
+﻿using CollectibleDiecast.EventBus.Extensions;
+using CollectibleDiecast.EventBusRabbitMQ;
+
+var builder = WebApplication.CreateBuilder(args);
 
 builder.AddServiceDefaults();
 
-builder.AddRabbitMqEventBus("EventBus")
+builder.AddRabbitMqEventBus("eventbus")
     .AddSubscription<OrderStatusChangedToStockConfirmedIntegrationEvent, OrderStatusChangedToStockConfirmedIntegrationEventHandler>();
 
 builder.Services.AddOptions<PaymentOptions>()

@@ -2,6 +2,8 @@
 using CollectibleDiecast.Basket.API.Repositories;
 using CollectibleDiecast.Basket.API.IntegrationEvents.EventHandling;
 using CollectibleDiecast.Basket.API.IntegrationEvents.EventHandling.Events;
+using CollectibleDiecast.EventBus.Extensions;
+using CollectibleDiecast.EventBusRabbitMQ;
 
 namespace CollectibleDiecast.Basket.API.Extensions;
 

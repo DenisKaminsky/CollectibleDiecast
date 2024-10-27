@@ -1,4 +1,5 @@
-﻿using CollectibleDiecast.Ordering.API.Data;
+﻿using CollectibleDiecast.EventBusRabbitMQ;
+using CollectibleDiecast.Ordering.API.Data;
 
 internal static class Extensions
 {
