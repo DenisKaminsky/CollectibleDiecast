@@ -43,10 +43,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PaymentProcessor", "src\Pay
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApp", "src\WebApp\WebApp.csproj", "{BE636956-26D5-404D-B269-17800032625D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebhookClient", "src\WebhookClient\WebhookClient.csproj", "{0ADFFA1B-A287-47BA-B7B9-8BC92396EEAB}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Webhooks.API", "src\Webhooks.API\Webhooks.API.csproj", "{C54EA64C-7EBC-4852-9B36-6E4EEA33AA6C}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Basket.UnitTests", "tests\Basket.UnitTests\Basket.UnitTests.csproj", "{90578B23-4460-4F80-8ECF-079C12DB2BCA}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ordering.FunctionalTests", "tests\Ordering.FunctionalTests\Ordering.FunctionalTests.csproj", "{341A5676-0D65-47D5-A483-99511E4C6C65}"
