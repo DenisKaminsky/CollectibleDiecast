@@ -1,4 +1,6 @@
-﻿namespace CollectibleDiecast.Ordering.UnitTests.Application;
+﻿using CollectibleDiecast.Ordering.API.Data.Repositories;
+
+namespace CollectibleDiecast.Ordering.UnitTests.Application;
 
 [TestClass]
 public class IdentifiedCommandHandlerTest

@@ -1,4 +1,6 @@
 ﻿using CollectibleDiecast.Ordering.API.Application.IntegrationEvents;
+using CollectibleDiecast.Ordering.API.Data.Models;
+using CollectibleDiecast.Ordering.API.Data.Repositories;
 
 namespace CollectibleDiecast.Ordering.UnitTests.Application;
 

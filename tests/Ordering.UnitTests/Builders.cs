@@ -1,4 +1,6 @@
-﻿namespace CollectibleDiecast.Ordering.UnitTests.Domain;
+﻿using CollectibleDiecast.Ordering.API.Data.Models;
+
+namespace CollectibleDiecast.Ordering.UnitTests.Domain;
 
 public class AddressBuilder
 {

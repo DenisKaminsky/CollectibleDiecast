@@ -1,4 +1,6 @@
-﻿namespace CollectibleDiecast.Ordering.UnitTests.Domain.SeedWork;
+﻿using CollectibleDiecast.Ordering.API.Data.Models;
+
+namespace CollectibleDiecast.Ordering.UnitTests.Domain.SeedWork;
 
 public class ValueObjectTests
 {

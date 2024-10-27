@@ -1,4 +1,7 @@
-﻿namespace CollectibleDiecast.Ordering.UnitTests.Domain;
+﻿using CollectibleDiecast.Ordering.API.Data.Models;
+using CollectibleDiecast.Ordering.API.Exceptions;
+
+namespace CollectibleDiecast.Ordering.UnitTests.Domain;
 
 [TestClass]
 public class BuyerAggregateTest

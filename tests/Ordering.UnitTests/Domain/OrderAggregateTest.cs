@@ -1,4 +1,8 @@
-﻿namespace CollectibleDiecast.Ordering.UnitTests.Domain;
+﻿using CollectibleDiecast.Ordering.API.Application.DomainEvents;
+using CollectibleDiecast.Ordering.API.Data.Models;
+using CollectibleDiecast.Ordering.API.Exceptions;
+
+namespace CollectibleDiecast.Ordering.UnitTests.Domain;
 
 using CollectibleDiecast.Ordering.UnitTests.Domain;
 
