@@ -1,24 +1,28 @@
 ﻿namespace CollectibleDiecast.PaymentProcessor.IntegrationEvents.EventHandling;
 
-public class OrderStatusChangedToStockConfirmedIntegrationEventHandler(
-    IEventBus eventBus,
-    IOptionsMonitor<PaymentOptions> options,
-    ILogger<OrderStatusChangedToStockConfirmedIntegrationEventHandler> logger) :
-    IIntegrationEventHandler<OrderStatusChangedToStockConfirmedIntegrationEvent>
+public class OrderStatusChangedToStockConfirmedIntegrationEventHandler: IIntegrationEventHandler<OrderStatusChangedToStockConfirmedIntegrationEvent>
 {
+    private readonly IEventBus _eventBus;
+    private readonly IOptionsMonitor<PaymentOptions> _options;
+    private readonly ILogger<OrderStatusChangedToStockConfirmedIntegrationEventHandler> _logger;
+
+    public OrderStatusChangedToStockConfirmedIntegrationEventHandler(
+        IEventBus eventBus,
+        IOptionsMonitor<PaymentOptions> options,
+        ILogger<OrderStatusChangedToStockConfirmedIntegrationEventHandler> logger)
+    {
+        _eventBus = eventBus;
+        _options = options;
+        _logger = logger;
+    }
+
     public async Task Handle(OrderStatusChangedToStockConfirmedIntegrationEvent @event)
     {
-        logger.LogInformation("Handling integration event: {IntegrationEventId} - ({@IntegrationEvent})", @event.Id, @event);
+        _logger.LogInformation("Handling integration event: {IntegrationEventId} - ({@IntegrationEvent})", @event.Id, @event);
 
         IntegrationEvent orderPaymentIntegrationEvent;
-
-        // Business feature comment:
-        // When OrderStatusChangedToStockConfirmed Integration Event is handled.
-        // Here we're simulating that we'd be performing the payment against any payment gateway
-        // Instead of a real payment we just take the env. var to simulate the payment 
-        // The payment can be successful or it can fail
-
-        if (options.CurrentValue.PaymentSucceeded)
+        //simulating payment
+        if (_options.CurrentValue.PaymentSucceeded)
         {
             orderPaymentIntegrationEvent = new OrderPaymentSucceededIntegrationEvent(@event.OrderId);
         }
@@ -27,8 +31,8 @@ public class OrderStatusChangedToStockConfirmedIntegrationEventHandler(
             orderPaymentIntegrationEvent = new OrderPaymentFailedIntegrationEvent(@event.OrderId);
         }
 
-        logger.LogInformation("Publishing integration event: {IntegrationEventId} - ({@IntegrationEvent})", orderPaymentIntegrationEvent.Id, orderPaymentIntegrationEvent);
+        _logger.LogInformation("Publishing integration event: {IntegrationEventId} - ({@IntegrationEvent})", orderPaymentIntegrationEvent.Id, orderPaymentIntegrationEvent);
 
-        await eventBus.PublishAsync(orderPaymentIntegrationEvent);
+        await _eventBus.PublishAsync(orderPaymentIntegrationEvent);
     }
 }
