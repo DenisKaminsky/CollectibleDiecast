@@ -72,6 +72,7 @@
         if (chatState is not null && !string.IsNullOrEmpty(messageCopy))
         {
             thinking = true;
+            //call StateHasChanged after message is added to rerender component
             await chatState.AddUserMessageAsync(messageCopy, onMessageAdded: StateHasChanged);
             thinking = false;
         }

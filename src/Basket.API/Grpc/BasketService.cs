@@ -1,14 +1,20 @@
 ﻿using System.Diagnostics.CodeAnalysis;
 using CollectibleDiecast.Basket.API.Repositories;
-using CollectibleDiecast.Basket.API.Extensions;
 using CollectibleDiecast.Basket.API.Model;
 
 namespace CollectibleDiecast.Basket.API.Grpc;
 
-public class BasketService(
-    IBasketRepository repository,
-    ILogger<BasketService> logger) : Basket.BasketBase
+public class BasketService: Basket.BasketBase
 {
+    private readonly IBasketRepository _repository;
+    private readonly ILogger<BasketService> _logger;
+
+    public BasketService(IBasketRepository repository, ILogger<BasketService> logger)
+    {
+        _repository = repository;
+        _logger = logger;
+    }
+
     [AllowAnonymous]
     public override async Task<CustomerBasketResponse> GetBasket(GetBasketRequest request, ServerCallContext context)
     {
@@ -18,12 +24,12 @@ public class BasketService(
             return new();
         }
 
-        if (logger.IsEnabled(LogLevel.Debug))
+        if (_logger.IsEnabled(LogLevel.Debug))
         {
-            logger.LogDebug("Begin GetBasketById call from method {Method} for basket id {Id}", context.Method, userId);
+            _logger.LogDebug("Begin GetBasketById call from method {Method} for basket id {Id}", context.Method, userId);
         }
 
-        var data = await repository.GetBasketAsync(userId);
+        var data = await _repository.GetBasketAsync(userId);
 
         if (data is not null)
         {
@@ -41,13 +47,13 @@ public class BasketService(
             ThrowNotAuthenticated();
         }
 
-        if (logger.IsEnabled(LogLevel.Debug))
+        if (_logger.IsEnabled(LogLevel.Debug))
         {
-            logger.LogDebug("Begin UpdateBasket call from method {Method} for basket id {Id}", context.Method, userId);
+            _logger.LogDebug("Begin UpdateBasket call from method {Method} for basket id {Id}", context.Method, userId);
         }
 
         var customerBasket = MapToCustomerBasket(userId, request);
-        var response = await repository.UpdateBasketAsync(customerBasket);
+        var response = await _repository.UpdateBasketAsync(customerBasket);
         if (response is null)
         {
             ThrowBasketDoesNotExist(userId);
@@ -64,7 +70,7 @@ public class BasketService(
             ThrowNotAuthenticated();
         }
 
-        await repository.DeleteBasketAsync(userId);
+        await _repository.DeleteBasketAsync(userId);
         return new();
     }
 

@@ -2,14 +2,22 @@
 
 namespace CollectibleDiecast.WebApp.Services.OrderStatus.IntegrationEvents;
 
-public class OrderStatusChangedToSubmittedIntegrationEventHandler(
-    OrderStatusNotificationService orderStatusNotificationService,
-    ILogger<OrderStatusChangedToSubmittedIntegrationEventHandler> logger)
-    : IIntegrationEventHandler<OrderStatusChangedToSubmittedIntegrationEvent>
+public class OrderStatusChangedToSubmittedIntegrationEventHandler : IIntegrationEventHandler<OrderStatusChangedToSubmittedIntegrationEvent>
 {
+    private readonly OrderStatusNotificationService _orderStatusNotificationService;
+    private readonly ILogger<OrderStatusChangedToSubmittedIntegrationEventHandler> _logger;
+
+    public OrderStatusChangedToSubmittedIntegrationEventHandler(
+        OrderStatusNotificationService orderStatusNotificationService,
+        ILogger<OrderStatusChangedToSubmittedIntegrationEventHandler> logger)
+    {
+        _orderStatusNotificationService = orderStatusNotificationService;
+        _logger = logger;
+    }
+
     public async Task Handle(OrderStatusChangedToSubmittedIntegrationEvent @event)
     {
-        logger.LogInformation("Handling integration event: {IntegrationEventId} - ({@IntegrationEvent})", @event.Id, @event);
-        await orderStatusNotificationService.NotifyOrderStatusChangedAsync(@event.BuyerIdentityGuid);
+        _logger.LogInformation("Handling integration event: {IntegrationEventId} - ({@IntegrationEvent})", @event.Id, @event);
+        await _orderStatusNotificationService.NotifyOrderStatusChangedAsync(@event.BuyerIdentityGuid);
     }
 }

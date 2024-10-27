@@ -3,16 +3,19 @@ using CollectibleDiecast.Basket.API.Model;
 
 namespace CollectibleDiecast.Basket.API.Repositories;
 
-public class RedisBasketRepository(ILogger<RedisBasketRepository> logger, IConnectionMultiplexer redis) : IBasketRepository
+public class RedisBasketRepository: IBasketRepository
 {
-    private readonly IDatabase _database = redis.GetDatabase();
+    private readonly ILogger<RedisBasketRepository> _logger;
+    private readonly IDatabase _database;
 
-    // implementation:
-
-    // - /basket/{id} "string" per unique basket
-    private static RedisKey BasketKeyPrefix = "/basket/"u8.ToArray();
-    // note on UTF8 here: library limitation (to be fixed) - prefixes are more efficient as blobs
-
+    public RedisBasketRepository(ILogger<RedisBasketRepository> logger, IConnectionMultiplexer redis)
+    {
+        _logger = logger;
+        _database = redis.GetDatabase();
+    }
+    
+    
+    private static RedisKey BasketKeyPrefix = new RedisKey("/basket/");
     private static RedisKey GetBasketKey(string userId) => BasketKeyPrefix.Append(userId);
 
     public async Task<bool> DeleteBasketAsync(string id)
@@ -38,12 +41,12 @@ public class RedisBasketRepository(ILogger<RedisBasketRepository> logger, IConne
 
         if (!created)
         {
-            logger.LogInformation("Problem occurred persisting the item.");
+            _logger.LogInformation("Problem occurred persisting the item.");
             return null;
         }
 
 
-        logger.LogInformation("Basket item persisted successfully.");
+        _logger.LogInformation("Basket item persisted successfully.");
         return await GetBasketAsync(basket.BuyerId);
     }
 }

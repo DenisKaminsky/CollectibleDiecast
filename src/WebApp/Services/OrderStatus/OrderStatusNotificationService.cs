@@ -14,7 +14,7 @@ public class OrderStatusNotificationService
         {
             if (!_subscriptionsByBuyerId.TryGetValue(buyerId, out var subscriptions))
             {
-                subscriptions = [];
+                subscriptions = new HashSet<Subscription>();
                 _subscriptionsByBuyerId.Add(buyerId, subscriptions);
             }
 
@@ -49,14 +49,25 @@ public class OrderStatusNotificationService
         }
     }
 
-    private class Subscription(OrderStatusNotificationService owner, string buyerId, Func<Task> callback) : IDisposable
+    private class Subscription : IDisposable
     {
+        private readonly OrderStatusNotificationService _owner;
+        private readonly string _buyerId;
+        private readonly Func<Task> _callback;
+
+        public Subscription(OrderStatusNotificationService owner, string buyerId, Func<Task> callback)
+        {
+            _owner = owner;
+            _buyerId = buyerId;
+            _callback = callback;
+        }
+
         public Task NotifyAsync()
         {
-            return callback();
+            return _callback();
         }
 
         public void Dispose()
-            => owner.Unsubscribe(buyerId, this);
+            => _owner.Unsubscribe(_buyerId, this);
     }
 }

@@ -2,7 +2,6 @@
 
 public class AIOptions
 {
-    /// <summary>Settings related to the use of OpenAI.</summary>
     public OpenAIOptions OpenAI { get; set; } = new();
 }
 

@@ -31,7 +31,7 @@ public class BasketState(
 
     public async Task AddAsync(CatalogItem item)
     {
-        var items = (await FetchBasketItemsAsync()).Select(i => new BasketQuantity(i.ProductId, i.Quantity)).ToList();
+        var items = (await FetchBasketItemsAsync()).Select(i => new BasketItemWithQuantity(i.ProductId, i.Quantity)).ToList();
         bool found = false;
         for (var i = 0; i < items.Count; i++)
         {
@@ -46,7 +46,7 @@ public class BasketState(
 
         if (!found)
         {
-            items.Add(new BasketQuantity(item.Id, 1));
+            items.Add(new BasketItemWithQuantity(item.Id, 1));
         }
 
         _cachedBasket = null;
@@ -69,7 +69,7 @@ public class BasketState(
             }
 
             _cachedBasket = null;
-            await basketService.UpdateBasketAsync(existingItems.Select(i => new BasketQuantity(i.ProductId, i.Quantity)).ToList());
+            await basketService.UpdateBasketAsync(existingItems.Select(i => new BasketItemWithQuantity(i.ProductId, i.Quantity)).ToList());
             await NotifyChangeSubscribersAsync();
         }
     }
@@ -134,7 +134,7 @@ public class BasketState(
                 var catalogItem = catalogItems[item.ProductId];
                 var orderItem = new BasketItem
                 {
-                    Id = Guid.NewGuid().ToString(), // TODO: this value is meaningless, use ProductId instead.
+                    Id = Guid.NewGuid().ToString(),
                     ProductId = catalogItem.Id,
                     ProductName = catalogItem.Name,
                     UnitPrice = catalogItem.Price,

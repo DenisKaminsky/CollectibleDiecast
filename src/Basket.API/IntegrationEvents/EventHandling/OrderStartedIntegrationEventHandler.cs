@@ -3,14 +3,21 @@ using CollectibleDiecast.Basket.API.IntegrationEvents.EventHandling.Events;
 
 namespace CollectibleDiecast.Basket.API.IntegrationEvents.EventHandling;
 
-public class OrderStartedIntegrationEventHandler(
-    IBasketRepository repository,
-    ILogger<OrderStartedIntegrationEventHandler> logger) : IIntegrationEventHandler<OrderStartedIntegrationEvent>
+public class OrderStartedIntegrationEventHandler: IIntegrationEventHandler<OrderStartedIntegrationEvent>
 {
+    private readonly IBasketRepository _repository;
+    private readonly ILogger<OrderStartedIntegrationEventHandler> _logger;
+
+    public OrderStartedIntegrationEventHandler(IBasketRepository repository, ILogger<OrderStartedIntegrationEventHandler> logger)
+    {
+        _repository = repository;
+        _logger = logger;
+    }
+
     public async Task Handle(OrderStartedIntegrationEvent @event)
     {
-        logger.LogInformation("Handling integration event: {IntegrationEventId} - ({@IntegrationEvent})", @event.Id, @event);
+        _logger.LogInformation("Handling integration event: {IntegrationEventId} - ({@IntegrationEvent})", @event.Id, @event);
 
-        await repository.DeleteBasketAsync(@event.UserId);
+        await _repository.DeleteBasketAsync(@event.UserId);
     }
 }

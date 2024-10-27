@@ -4,20 +4,27 @@ using GrpcBasketClient = CollectibleDiecast.Basket.API.Grpc.Basket.BasketClient;
 
 namespace CollectibleDiecast.WebApp.Services;
 
-public class BasketService(GrpcBasketClient basketClient)
+public class BasketService
 {
-    public async Task<IReadOnlyCollection<BasketQuantity>> GetBasketAsync()
+    private readonly GrpcBasketClient _basketClient;
+
+    public BasketService(GrpcBasketClient basketClient)
     {
-        var result = await basketClient.GetBasketAsync(new ());
+        _basketClient = basketClient;
+    }
+
+    public async Task<IReadOnlyCollection<BasketItemWithQuantity>> GetBasketAsync()
+    {
+        var result = await _basketClient.GetBasketAsync(new GetBasketRequest());
         return MapToBasket(result);
     }
 
     public async Task DeleteBasketAsync()
     {
-        await basketClient.DeleteBasketAsync(new DeleteBasketRequest());
+        await _basketClient.DeleteBasketAsync(new DeleteBasketRequest());
     }
 
-    public async Task UpdateBasketAsync(IReadOnlyCollection<BasketQuantity> basket)
+    public async Task UpdateBasketAsync(IReadOnlyCollection<BasketItemWithQuantity> basket)
     {
         var updatePayload = new UpdateBasketRequest();
 
@@ -31,19 +38,19 @@ public class BasketService(GrpcBasketClient basketClient)
             updatePayload.Items.Add(updateItem);
         }
 
-        await basketClient.UpdateBasketAsync(updatePayload);
+        await _basketClient.UpdateBasketAsync(updatePayload);
     }
 
-    private static List<BasketQuantity> MapToBasket(CustomerBasketResponse response)
+    private static List<BasketItemWithQuantity> MapToBasket(CustomerBasketResponse response)
     {
-        var result = new List<BasketQuantity>();
+        var result = new List<BasketItemWithQuantity>();
         foreach (var item in response.Items)
         {
-            result.Add(new BasketQuantity(item.ProductId, item.Quantity));
+            result.Add(new BasketItemWithQuantity(item.ProductId, item.Quantity));
         }
 
         return result;
     }
 }
 
-public record BasketQuantity(int ProductId, int Quantity);
+public record BasketItemWithQuantity(int ProductId, int Quantity);
