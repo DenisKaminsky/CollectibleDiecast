@@ -1,4 +1,6 @@
-﻿internal static class Extensions
+﻿using CollectibleDiecast.Ordering.API.Data;
+
+internal static class Extensions
 {
     public static void AddApplicationServices(this IHostApplicationBuilder builder)
     {
@@ -48,7 +50,7 @@
         services.AddScoped<IOrderQueries, OrderQueries>();
         services.AddScoped<IBuyerRepository, BuyerRepository>();
         services.AddScoped<IOrderRepository, OrderRepository>();
-        services.AddScoped<IRequestManager, RequestManager>();
+        services.AddScoped<IRequestRepository, RequestRepository>();
     }
 
     private static void AddEventBusSubscriptions(this IEventBusBuilder eventBus)

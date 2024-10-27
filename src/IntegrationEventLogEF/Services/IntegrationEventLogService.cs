@@ -3,7 +3,6 @@
 public class IntegrationEventLogService<TContext> : IIntegrationEventLogService, IDisposable
     where TContext : DbContext
 {
-    private volatile bool _disposedValue;
     private readonly TContext _context;
     private readonly Type[] _eventTypes;
 
@@ -28,7 +27,7 @@ public class IntegrationEventLogService<TContext> : IIntegrationEventLogService,
                 .Select(e => e.DeserializeJsonContent(_eventTypes.FirstOrDefault(t => t.Name == e.EventTypeShortName)));
         }
 
-        return [];
+        return Array.Empty<IntegrationEventLogEntry>();
     }
 
     public Task SaveEventAsync(IntegrationEvent @event, IDbContextTransaction transaction)
@@ -69,6 +68,8 @@ public class IntegrationEventLogService<TContext> : IIntegrationEventLogService,
         return _context.SaveChangesAsync();
     }
 
+    #region dispose
+    private volatile bool _disposedValue;
     protected virtual void Dispose(bool disposing)
     {
         if (!_disposedValue)
@@ -77,8 +78,6 @@ public class IntegrationEventLogService<TContext> : IIntegrationEventLogService,
             {
                 _context.Dispose();
             }
-
-
             _disposedValue = true;
         }
     }
@@ -88,4 +87,5 @@ public class IntegrationEventLogService<TContext> : IIntegrationEventLogService,
         Dispose(disposing: true);
         GC.SuppressFinalize(this);
     }
+    #endregion
 }

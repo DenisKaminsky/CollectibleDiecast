@@ -1,7 +1,8 @@
-﻿namespace CollectibleDiecast.Ordering.API.Application.Commands;
+﻿using Order = CollectibleDiecast.Ordering.API.Data.Models.Order;
+
+namespace CollectibleDiecast.Ordering.API.Application.Commands;
 
 using CollectibleDiecast.Ordering.API.Extensions;
-using CollectibleDiecast.Ordering.Domain.AggregatesModel.OrderAggregate;
 
 // Regular CommandHandler
 public class CreateOrderDraftCommandHandler

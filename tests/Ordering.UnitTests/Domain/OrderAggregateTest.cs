@@ -1,6 +1,5 @@
 ﻿namespace CollectibleDiecast.Ordering.UnitTests.Domain;
 
-using CollectibleDiecast.Ordering.Domain.AggregatesModel.OrderAggregate;
 using CollectibleDiecast.Ordering.UnitTests.Domain;
 
 [TestClass]

@@ -1,7 +1,8 @@
-﻿namespace CollectibleDiecast.Ordering.API.Application.DomainEventHandlers;
+﻿using CollectibleDiecast.Ordering.API.Application.DomainEvents;
 
-public class ValidateOrAddBuyerAggregateWhenOrderStartedDomainEventHandler
-                    : INotificationHandler<OrderStartedDomainEvent>
+namespace CollectibleDiecast.Ordering.API.Application.DomainEventHandlers;
+
+public class ValidateOrAddBuyerAggregateWhenOrderStartedDomainEventHandler : INotificationHandler<OrderStartedDomainEvent>
 {
     private readonly ILogger _logger;
     private readonly IBuyerRepository _buyerRepository;

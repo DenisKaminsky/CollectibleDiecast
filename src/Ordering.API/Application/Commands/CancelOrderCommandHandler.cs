@@ -35,7 +35,7 @@ public class CancelOrderIdentifiedCommandHandler : IdentifiedCommandHandler<Canc
 {
     public CancelOrderIdentifiedCommandHandler(
         IMediator mediator,
-        IRequestManager requestManager,
+        IRequestRepository requestManager,
         ILogger<IdentifiedCommandHandler<CancelOrderCommand, bool>> logger)
         : base(mediator, requestManager, logger)
     {

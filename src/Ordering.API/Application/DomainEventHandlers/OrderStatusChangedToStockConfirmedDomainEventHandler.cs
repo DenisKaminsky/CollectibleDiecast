@@ -1,7 +1,8 @@
-﻿namespace CollectibleDiecast.Ordering.API.Application.DomainEventHandlers;
+﻿using CollectibleDiecast.Ordering.API.Application.DomainEvents;
 
-public class OrderStatusChangedToStockConfirmedDomainEventHandler
-                : INotificationHandler<OrderStatusChangedToStockConfirmedDomainEvent>
+namespace CollectibleDiecast.Ordering.API.Application.DomainEventHandlers;
+
+public class OrderStatusChangedToStockConfirmedDomainEventHandler : INotificationHandler<OrderStatusChangedToStockConfirmedDomainEvent>
 {
     private readonly IOrderRepository _orderRepository;
     private readonly IBuyerRepository _buyerRepository;

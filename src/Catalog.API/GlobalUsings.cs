@@ -12,7 +12,6 @@ global using CollectibleDiecast.EventBus.Abstractions;
 global using CollectibleDiecast.EventBus.Events;
 global using CollectibleDiecast.IntegrationEventLogEF;
 global using CollectibleDiecast.IntegrationEventLogEF.Services;
-global using CollectibleDiecast.IntegrationEventLogEF.Utilities;
 global using CollectibleDiecast.ServiceDefaults;
 global using Microsoft.EntityFrameworkCore;
 global using Microsoft.EntityFrameworkCore.Metadata.Builders;

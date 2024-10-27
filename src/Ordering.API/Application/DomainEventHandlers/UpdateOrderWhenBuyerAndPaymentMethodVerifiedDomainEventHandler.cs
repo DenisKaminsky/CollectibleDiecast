@@ -1,4 +1,6 @@
-﻿namespace CollectibleDiecast.Ordering.API.Application.DomainEventHandlers;
+﻿using CollectibleDiecast.Ordering.API.Application.DomainEvents;
+
+namespace CollectibleDiecast.Ordering.API.Application.DomainEventHandlers;
 
 public class UpdateOrderWhenBuyerAndPaymentMethodVerifiedDomainEventHandler : INotificationHandler<BuyerAndPaymentMethodVerifiedDomainEvent>
 {

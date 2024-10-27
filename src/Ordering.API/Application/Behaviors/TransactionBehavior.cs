@@ -1,4 +1,6 @@
-﻿namespace CollectibleDiecast.Ordering.API.Application.Behaviors;
+﻿using CollectibleDiecast.Ordering.API.Data;
+
+namespace CollectibleDiecast.Ordering.API.Application.Behaviors;
 
 using Microsoft.Extensions.Logging;
 

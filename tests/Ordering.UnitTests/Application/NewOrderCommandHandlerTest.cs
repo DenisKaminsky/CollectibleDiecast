@@ -1,5 +1,4 @@
 ﻿using CollectibleDiecast.Ordering.API.Application.IntegrationEvents;
-using CollectibleDiecast.Ordering.Domain.AggregatesModel.OrderAggregate;
 
 namespace CollectibleDiecast.Ordering.UnitTests.Application;
 

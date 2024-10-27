@@ -1,4 +1,6 @@
-﻿namespace CollectibleDiecast.Ordering.API.Application.Behaviors;
+﻿using CollectibleDiecast.Ordering.API.Exceptions;
+
+namespace CollectibleDiecast.Ordering.API.Application.Behaviors;
 
 public class ValidatorBehavior<TRequest, TResponse> : IPipelineBehavior<TRequest, TResponse> where TRequest : IRequest<TResponse>
 {

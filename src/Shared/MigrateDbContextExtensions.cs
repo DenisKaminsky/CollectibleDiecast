@@ -73,12 +73,21 @@ internal static class MigrateDbContextExtensions
         }
     }
 
-    private class MigrationHostedService<TContext>(IServiceProvider serviceProvider, Func<TContext, IServiceProvider, Task> seeder)
-        : BackgroundService where TContext : DbContext
+    private class MigrationHostedService<TContext> : BackgroundService 
+        where TContext : DbContext
     {
+        private readonly IServiceProvider _serviceProvider;
+        private readonly Func<TContext, IServiceProvider, Task> _seeder;
+
+        public MigrationHostedService(IServiceProvider serviceProvider, Func<TContext, IServiceProvider, Task> seeder)
+        {
+            _serviceProvider = serviceProvider;
+            _seeder = seeder;
+        }
+
         public override Task StartAsync(CancellationToken cancellationToken)
         {
-            return serviceProvider.MigrateDbContextAsync(seeder);
+            return _serviceProvider.MigrateDbContextAsync(_seeder);
         }
 
         protected override Task ExecuteAsync(CancellationToken stoppingToken)

@@ -1,7 +1,8 @@
-﻿namespace CollectibleDiecast.Ordering.API.Application.DomainEventHandlers;
+﻿using CollectibleDiecast.Ordering.API.Application.DomainEvents;
 
-public class OrderShippedDomainEventHandler
-                : INotificationHandler<OrderShippedDomainEvent>
+namespace CollectibleDiecast.Ordering.API.Application.DomainEventHandlers;
+
+public class OrderShippedDomainEventHandler : INotificationHandler<OrderShippedDomainEvent>
 {
     private readonly IOrderRepository _orderRepository;
     private readonly IBuyerRepository _buyerRepository;

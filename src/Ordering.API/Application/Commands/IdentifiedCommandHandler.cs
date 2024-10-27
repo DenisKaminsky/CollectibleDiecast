@@ -10,12 +10,12 @@ public abstract class IdentifiedCommandHandler<T, R> : IRequestHandler<Identifie
     where T : IRequest<R>
 {
     private readonly IMediator _mediator;
-    private readonly IRequestManager _requestManager;
+    private readonly IRequestRepository _requestManager;
     private readonly ILogger<IdentifiedCommandHandler<T, R>> _logger;
 
     public IdentifiedCommandHandler(
         IMediator mediator,
-        IRequestManager requestManager,
+        IRequestRepository requestManager,
         ILogger<IdentifiedCommandHandler<T, R>> logger)
     {
         ArgumentNullException.ThrowIfNull(logger);

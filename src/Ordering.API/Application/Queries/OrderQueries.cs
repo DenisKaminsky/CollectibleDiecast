@@ -1,4 +1,6 @@
-﻿namespace CollectibleDiecast.Ordering.API.Application.Queries;
+﻿using CollectibleDiecast.Ordering.API.Data;
+
+namespace CollectibleDiecast.Ordering.API.Application.Queries;
 
 public class OrderQueries(OrderingContext context)
     : IOrderQueries

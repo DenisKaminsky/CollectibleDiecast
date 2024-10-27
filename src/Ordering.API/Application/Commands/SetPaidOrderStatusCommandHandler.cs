@@ -38,7 +38,7 @@ public class SetPaidIdentifiedOrderStatusCommandHandler : IdentifiedCommandHandl
 {
     public SetPaidIdentifiedOrderStatusCommandHandler(
         IMediator mediator,
-        IRequestManager requestManager,
+        IRequestRepository requestManager,
         ILogger<IdentifiedCommandHandler<SetPaidOrderStatusCommand, bool>> logger)
         : base(mediator, requestManager, logger)
     {

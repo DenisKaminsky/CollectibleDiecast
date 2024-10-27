@@ -1,43 +1,59 @@
 ﻿namespace CollectibleDiecast.Catalog.API.IntegrationEvents;
 
-public sealed class CatalogIntegrationEventService(ILogger<CatalogIntegrationEventService> logger,
-    IEventBus eventBus,
-    CatalogContext catalogContext,
-    IIntegrationEventLogService integrationEventLogService)
-    : ICatalogIntegrationEventService, IDisposable
+public sealed class CatalogIntegrationEventService : ICatalogIntegrationEventService, IDisposable
 {
-    private volatile bool disposedValue;
+    private readonly ILogger<CatalogIntegrationEventService> _logger;
+    private readonly IEventBus _eventBus;
+    private readonly CatalogContext _catalogContext;
+    private readonly IIntegrationEventLogService _integrationEventLogService;
+
+    public CatalogIntegrationEventService(ILogger<CatalogIntegrationEventService> logger,
+        IEventBus eventBus,
+        CatalogContext catalogContext,
+        IIntegrationEventLogService integrationEventLogService)
+    {
+        _logger = logger;
+        _eventBus = eventBus;
+        _catalogContext = catalogContext;
+        _integrationEventLogService = integrationEventLogService;
+    }
 
     public async Task PublishThroughEventBusAsync(IntegrationEvent evt)
     {
         try
         {
-            logger.LogInformation("Publishing integration event: {IntegrationEventId_published} - ({@IntegrationEvent})", evt.Id, evt);
+            _logger.LogInformation("Publishing integration event: {IntegrationEventId_published} - ({@IntegrationEvent})", evt.Id, evt);
 
-            await integrationEventLogService.MarkEventAsInProgressAsync(evt.Id);
-            await eventBus.PublishAsync(evt);
-            await integrationEventLogService.MarkEventAsPublishedAsync(evt.Id);
+            await _integrationEventLogService.MarkEventAsInProgressAsync(evt.Id);
+            await _eventBus.PublishAsync(evt);
+            await _integrationEventLogService.MarkEventAsPublishedAsync(evt.Id);
         }
         catch (Exception ex)
         {
-            logger.LogError(ex, "Error Publishing integration event: {IntegrationEventId} - ({@IntegrationEvent})", evt.Id, evt);
-            await integrationEventLogService.MarkEventAsFailedAsync(evt.Id);
+            _logger.LogError(ex, "Error Publishing integration event: {IntegrationEventId} - ({@IntegrationEvent})", evt.Id, evt);
+            await _integrationEventLogService.MarkEventAsFailedAsync(evt.Id);
         }
     }
 
     public async Task SaveEventAndCatalogContextChangesAsync(IntegrationEvent evt)
     {
-        logger.LogInformation("CatalogIntegrationEventService - Saving changes and integrationEvent: {IntegrationEventId}", evt.Id);
+        _logger.LogInformation("CatalogIntegrationEventService - Saving changes and integrationEvent: {IntegrationEventId}", evt.Id);
 
-        //Use of an EF Core resiliency strategy when using multiple DbContexts within an explicit BeginTransaction():
-        //See: https://docs.microsoft.com/en-us/ef/core/miscellaneous/connection-resiliency            
-        await ResilientTransaction.New(catalogContext).ExecuteAsync(async () =>
+        var strategy = _catalogContext.Database.CreateExecutionStrategy();
+        await strategy.ExecuteAsync(async () =>
         {
-            // Achieving atomicity between original catalog database operation and the IntegrationEventLog thanks to a local transaction
-            await catalogContext.SaveChangesAsync();
-            await integrationEventLogService.SaveEventAsync(evt, catalogContext.Database.CurrentTransaction);
+            await using var transaction = await _catalogContext.Database.BeginTransactionAsync();
+
+            await _catalogContext.SaveChangesAsync();
+            await _integrationEventLogService.SaveEventAsync(evt, _catalogContext.Database.CurrentTransaction);
+
+            await transaction.CommitAsync();
         });
     }
+
+
+    #region dispose
+    private volatile bool disposedValue;
 
     private void Dispose(bool disposing)
     {
@@ -45,7 +61,7 @@ public sealed class CatalogIntegrationEventService(ILogger<CatalogIntegrationEve
         {
             if (disposing)
             {
-                (integrationEventLogService as IDisposable)?.Dispose();
+                (_integrationEventLogService as IDisposable)?.Dispose();
             }
 
             disposedValue = true;
@@ -57,4 +73,5 @@ public sealed class CatalogIntegrationEventService(ILogger<CatalogIntegrationEve
         Dispose(disposing: true);
         GC.SuppressFinalize(this);
     }
+    #endregion
 }

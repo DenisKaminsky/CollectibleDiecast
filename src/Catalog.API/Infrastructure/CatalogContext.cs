@@ -1,8 +1,6 @@
 ﻿namespace CollectibleDiecast.Catalog.API.Infrastructure;
 
 /// <remarks>
-/// Add migrations using the following command inside the 'Catalog.API' project directory:
-///
 /// dotnet ef migrations add --context CatalogContext [migration-name]
 /// </remarks>
 public class CatalogContext : DbContext

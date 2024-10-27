@@ -1,6 +1,7 @@
-﻿namespace CollectibleDiecast.Ordering.API.Infrastructure;
+﻿using CollectibleDiecast.Ordering.API.Data;
+using CardType = CollectibleDiecast.Ordering.API.Data.Models.CardType;
 
-using CollectibleDiecast.Ordering.Domain.AggregatesModel.BuyerAggregate;
+namespace CollectibleDiecast.Ordering.API.Infrastructure;
 
 public class OrderingContextSeed: IDbSeeder<OrderingContext>
 {

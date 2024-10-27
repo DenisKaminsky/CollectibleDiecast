@@ -3,13 +3,13 @@
 [TestClass]
 public class IdentifiedCommandHandlerTest
 {
-    private readonly IRequestManager _requestManager;
+    private readonly IRequestRepository _requestManager;
     private readonly IMediator _mediator;
     private readonly ILogger<IdentifiedCommandHandler<CreateOrderCommand, bool>> _loggerMock;
 
     public IdentifiedCommandHandlerTest()
     {
-        _requestManager = Substitute.For<IRequestManager>();
+        _requestManager = Substitute.For<IRequestRepository>();
         _mediator = Substitute.For<IMediator>();
         _loggerMock = Substitute.For<ILogger<IdentifiedCommandHandler<CreateOrderCommand, bool>>>();
     }

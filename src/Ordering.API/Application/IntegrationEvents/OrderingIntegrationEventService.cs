@@ -1,4 +1,6 @@
-﻿namespace CollectibleDiecast.Ordering.API.Application.IntegrationEvents;
+﻿using CollectibleDiecast.Ordering.API.Data;
+
+namespace CollectibleDiecast.Ordering.API.Application.IntegrationEvents;
 
 public class OrderingIntegrationEventService(IEventBus eventBus,
     OrderingContext orderingContext,

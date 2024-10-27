@@ -1,7 +1,8 @@
-﻿namespace CollectibleDiecast.Ordering.API.Application.DomainEventHandlers;
+﻿using CollectibleDiecast.Ordering.API.Application.DomainEvents;
 
-public class OrderStatusChangedToAwaitingValidationDomainEventHandler
-                : INotificationHandler<OrderStatusChangedToAwaitingValidationDomainEvent>
+namespace CollectibleDiecast.Ordering.API.Application.DomainEventHandlers;
+
+public class OrderStatusChangedToAwaitingValidationDomainEventHandler : INotificationHandler<OrderStatusChangedToAwaitingValidationDomainEvent>
 {
     private readonly IOrderRepository _orderRepository;
     private readonly ILogger _logger;

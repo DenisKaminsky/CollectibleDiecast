@@ -1,6 +1,6 @@
-﻿namespace CollectibleDiecast.Ordering.API.Application.Commands;
+﻿using Order = CollectibleDiecast.Ordering.API.Data.Models.Order;
 
-using CollectibleDiecast.Ordering.Domain.AggregatesModel.OrderAggregate;
+namespace CollectibleDiecast.Ordering.API.Application.Commands;
 
 // Regular CommandHandler
 public class CreateOrderCommandHandler
@@ -58,7 +58,7 @@ public class CreateOrderIdentifiedCommandHandler : IdentifiedCommandHandler<Crea
 {
     public CreateOrderIdentifiedCommandHandler(
         IMediator mediator,
-        IRequestManager requestManager,
+        IRequestRepository requestManager,
         ILogger<IdentifiedCommandHandler<CreateOrderCommand, bool>> logger)
         : base(mediator, requestManager, logger)
     {

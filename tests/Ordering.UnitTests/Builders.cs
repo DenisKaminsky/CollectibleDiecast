@@ -1,6 +1,4 @@
-﻿using CollectibleDiecast.Ordering.Domain.AggregatesModel.OrderAggregate;
-
-namespace CollectibleDiecast.Ordering.UnitTests.Domain;
+﻿namespace CollectibleDiecast.Ordering.UnitTests.Domain;
 
 public class AddressBuilder
 {
