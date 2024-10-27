@@ -1,7 +1,4 @@
-﻿using CollectibleDiecast.WebApp.Components;
-using CollectibleDiecast.ServiceDefaults;
-
-var builder = WebApplication.CreateBuilder(args);
+﻿var builder = WebApplication.CreateBuilder(args);
 
 builder.AddServiceDefaults();
 

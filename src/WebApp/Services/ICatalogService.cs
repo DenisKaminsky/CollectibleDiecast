@@ -1,8 +1,6 @@
-﻿using System.Collections.Generic;
-using System.Threading.Tasks;
-using CollectibleDiecast.WebAppComponents.Catalog;
+﻿using CollectibleDiecast.WebApp.Components.Catalog;
 
-namespace CollectibleDiecast.WebAppComponents.Services
+namespace CollectibleDiecast.WebApp.Services
 {
     public interface ICatalogService
     {

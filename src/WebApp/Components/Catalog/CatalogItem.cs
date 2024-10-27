@@ -1,4 +1,4 @@
-﻿namespace CollectibleDiecast.WebAppComponents.Catalog;
+﻿namespace CollectibleDiecast.WebApp.Components.Catalog;
 
 public record CatalogItem(
     int Id,

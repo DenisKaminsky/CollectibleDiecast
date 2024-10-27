@@ -1,8 +1,7 @@
 ﻿using System.Security.Claims;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Authorization;
-using CollectibleDiecast.WebAppComponents.Catalog;
-using CollectibleDiecast.WebAppComponents.Services;
+using CollectibleDiecast.WebApp.Components.Catalog;
 
 namespace CollectibleDiecast.WebApp.Services;
 

@@ -13,7 +13,6 @@
       "src\\Ordering.Domain\\Ordering.Domain.csproj",
       "src\\Ordering.Infrastructure\\Ordering.Infrastructure.csproj",
       "src\\PaymentProcessor\\PaymentProcessor.csproj",
-      "src\\WebAppComponents\\WebAppComponents.csproj",
       "src\\WebApp\\WebApp.csproj",
       "src\\CollectibleDiecast.AppHost\\CollectibleDiecast.AppHost.csproj",
       "src\\CollectibleDiecast.ServiceDefaults\\CollectibleDiecast.ServiceDefaults.csproj",

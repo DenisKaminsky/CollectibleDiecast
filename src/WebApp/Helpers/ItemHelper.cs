@@ -1,6 +1,6 @@
-﻿using CollectibleDiecast.WebAppComponents.Catalog;
+﻿using CollectibleDiecast.WebApp.Components.Catalog;
 
-namespace CollectibleDiecast.WebAppComponents.Item;
+namespace CollectibleDiecast.WebApp.Helpers;
 
 public static class ItemHelper
 {

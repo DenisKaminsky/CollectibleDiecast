@@ -1,13 +1,9 @@
-﻿using System;
-using Azure.AI.OpenAI;
-using CollectibleDiecast.WebApp;
-using CollectibleDiecast.WebAppComponents.Services;
+﻿using CollectibleDiecast.WebApp;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication.OpenIdConnect;
 using Microsoft.AspNetCore.Components.Authorization;
 using Microsoft.AspNetCore.Components.Server;
 using Microsoft.Extensions.AI;
-using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.JsonWebTokens;
 using CollectibleDiecast.WebApp.Services.OrderStatus.IntegrationEvents;
 using CollectibleDiecast.Basket.API.Grpc;

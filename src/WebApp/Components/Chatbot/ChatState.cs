@@ -1,10 +1,9 @@
 ﻿using System.ComponentModel;
 using System.Security.Claims;
 using System.Text.Json;
-using CollectibleDiecast.WebAppComponents.Services;
 using Microsoft.Extensions.AI;
 
-namespace CollectibleDiecast.WebApp.Chatbot;
+namespace CollectibleDiecast.WebApp.Components.Chatbot;
 
 public class ChatState
 {
@@ -38,17 +37,17 @@ public class ChatState
         _chatClient = chatClient;
         _chatOptions = new()
         {
-            Tools =
-            [
+            Tools = new[]
+            {
                 AIFunctionFactory.Create(GetUserInfo),
                 AIFunctionFactory.Create(SearchCatalog),
                 AIFunctionFactory.Create(AddToCart),
                 AIFunctionFactory.Create(GetCartContents),
-            ],
+            }
         };
 
-        Messages =
-        [
+        Messages = new[]
+        {
             new ChatMessage(ChatRole.System, """
                 You are an AI customer service agent for the online retailer "Collectible Diecast".
                 You NEVER respond about topics other than "Collectible Diecast".
@@ -60,8 +59,8 @@ public class ChatState
                 """),
             new ChatMessage(ChatRole.Assistant, """
                 Hi! I'm the "Collectible Diecast" Assistant. How can I help you?
-                """),
-        ];
+                """)
+        };
     }
 
     public IList<ChatMessage> Messages { get; }

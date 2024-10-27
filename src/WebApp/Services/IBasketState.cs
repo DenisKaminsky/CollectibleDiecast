@@ -1,4 +1,4 @@
-﻿using CollectibleDiecast.WebAppComponents.Catalog;
+﻿using CollectibleDiecast.WebApp.Components.Catalog;
 
 namespace CollectibleDiecast.WebApp.Services
 {

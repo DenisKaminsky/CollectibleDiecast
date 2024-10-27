@@ -1,6 +1,4 @@
-﻿using CollectibleDiecast.WebAppComponents.Services;
-
-namespace CollectibleDiecast.WebApp.Services;
+﻿namespace CollectibleDiecast.WebApp.Services;
 
 public class ProductImageUrlProvider : IProductImageUrlProvider
 {
