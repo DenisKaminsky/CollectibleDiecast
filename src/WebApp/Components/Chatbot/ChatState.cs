@@ -46,7 +46,7 @@ public class ChatState
             }
         };
 
-        Messages = new[]
+        Messages = new List<ChatMessage>
         {
             new ChatMessage(ChatRole.System, """
                 You are an AI customer service agent for the online retailer "Collectible Diecast".

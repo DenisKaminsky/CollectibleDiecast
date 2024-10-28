@@ -33,16 +33,7 @@ public static class Extensions
         builder.Services.AddOptions<CatalogOptions>()
             .BindConfiguration(nameof(CatalogOptions));
 
-        if (builder.Configuration["AI:Ollama:Endpoint"] is string ollamaEndpoint && !string.IsNullOrWhiteSpace(ollamaEndpoint))
-        {
-            builder.Services.AddEmbeddingGenerator<string, Embedding<float>>(b => b
-                .UseOpenTelemetry()
-                .UseLogging()
-                .Use(new OllamaEmbeddingGenerator(
-                    new Uri(ollamaEndpoint),
-                    builder.Configuration["AI:Ollama:EmbeddingModel"])));
-        }
-        else if (!string.IsNullOrWhiteSpace(builder.Configuration.GetConnectionString("openai")))
+        if (!string.IsNullOrWhiteSpace(builder.Configuration.GetConnectionString("openai")))
         {
             builder.AddOpenAIClientFromConfiguration("openai");
             builder.Services.AddEmbeddingGenerator<string, Embedding<float>>(b => b
